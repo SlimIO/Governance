@@ -1,14 +1,16 @@
 # Governance
-Slim.io - Governance &amp; project repository
+Slim.io - Governance &amp; Documentation repository
 
-## Introduction
+## Documentation
+TBC
 
-Ce GIT a pour objectif de mettre au clair les règles de contributions et exprimer la conduite nécessaire. Il fait aussi office de pont pour créer et répondre à des problèmes liés à l'intégralité du projet sous toutes ses formes.
+## Contribution Guidelines
+TBC
 
-## Contributeurs du projet
+## Collaborators
 
-- GENTILHOMME Thomas
-- MALAJ Alexandre
-- MONTES Irvin
-- GENTILHOMME Jonathan
-- MALAJ Mark
+- [fraxken](https://github.com/fraxken) - GENTILHOMME Thomas &lt;gentilhomme.thomas@gmail.com&gt;
+- [Aleksander](https://github.com/AlexandreMalaj) - MALAJ Alexandre &lt;alexandre.malaj@gmail.com>&gt;
+- [Captain](https://github.com/Captainfive) - MONTES Irvin &lt;vinou_montes@hotmail.fr&gt;
+- [GuismoJames](https://www.linkedin.com/in/jgentilhomme/) - GENTILHOMME Jonathan &lt;gentilhomme.jonathan@gmail.com&gt;
+- [Marko](https://github.com/Markobobby) - MALAJ Mark &lt;Malaj1.mark@gmail.com&gt;
