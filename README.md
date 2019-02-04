@@ -5,7 +5,7 @@ Slim.io - Governance &amp; Documentation repository
 TBC
 
 ## Contribution Guidelines
-TBC
+Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
 
 ## Collaborators
 
