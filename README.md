@@ -2,7 +2,7 @@
 Slim.io - Governance &amp; Documentation repository
 
 ## Documentation
-TBC
+- [How to contribute to N-API Addons](./docs/native_addons.md)
 
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
