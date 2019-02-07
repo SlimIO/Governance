@@ -1,4 +1,6 @@
 # Governance
+![discord](https://img.shields.io/discord/359783688403156994.svg?style=flat)
+
 Slim.io - Governance &amp; Documentation repository
 
 ## Documentation
