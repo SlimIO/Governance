@@ -6,6 +6,9 @@ Slim.io - Governance &amp; Documentation repository
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
 
+Google Drive (French):
+- [Architecture Technique](https://docs.google.com/document/d/15e4z7Ev7ObohDWgZwGkd6PDq-cWtC54aUvPSP2finZw/edit?usp=sharing)
+
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
 
