@@ -9,6 +9,10 @@ Slim.io - Governance &amp; Documentation repository
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
 
+Feel free to join us on discord to ask questions !
+
+[![ES-Community](https://discordapp.com/api/guilds/359783688403156994/embed.png?style=banner2)](https://discord.gg/YA87kR2)
+
 ## Collaborators
 
 - [fraxken](https://github.com/fraxken) - GENTILHOMME Thomas &lt;gentilhomme.thomas@gmail.com&gt;
