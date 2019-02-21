@@ -1,7 +1,7 @@
 # Governance
 ![discord](https://img.shields.io/discord/359783688403156994.svg?style=flat)
 
-Slim.io - Governance &amp; Documentation repository
+SlimIO - Governance &amp; Documentation repository
 
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
@@ -23,3 +23,54 @@ Feel free to join us on discord to ask questions !
 - [Captain](https://github.com/Captainfive) - MONTES Irvin &lt;vinou_montes@hotmail.fr&gt;
 - [GuismoJames](https://www.linkedin.com/in/jgentilhomme/) - GENTILHOMME Jonathan &lt;gentilhomme.jonathan@gmail.com&gt;
 - [Marko](https://github.com/Markobobby) - MALAJ Mark &lt;Malaj1.mark@gmail.com&gt;
+
+## Available Repositories
+The following section contains all SlimIO packages and projects splited by their roles.
+
+<details><summary>Tools (Maintenance assistance)</summary>
+<br />
+
+- [Eslint-config](https://github.com/SlimIO/Eslint-config) - ESLint configuration
+- [TSD](https://github.com/SlimIO/tsd) - SlimIO TypeScript definition
+- [Discord BOT](https://github.com/SlimIO/Bot) - Discord.js BOT for our Discord (Manage webhooks etc..).
+- [Project Generator](https://github.com/SlimIO/Generator) - Generate a SlimIO project with a CLI.
+</details>
+
+<details><summary>Utils</summary>
+<br />
+
+- [Utils](https://github.com/SlimIO/Utils) - Utilities Functions
+</details>
+
+<details><summary>Core & Agent</summary>
+<br />
+
+</details>
+
+<details><summary>Addons</summary>
+<br />
+
+</details>
+
+<details><summary>Integration Tools</summary>
+<br />
+
+</details>
+
+<details><summary>API HTTP (Web Service)</summary>
+<br />
+
+</details>
+
+<details><summary>C/C++ Binding</summary>
+<br />
+
+</details>
+
+<details><summary>Archive/Deprecated</summary>
+<br />
+
+</details>
+
+## License
+MIT
