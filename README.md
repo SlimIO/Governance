@@ -28,8 +28,8 @@ Feel free to join us on discord to ask questions !
 The following section contains all SlimIO packages and projects splited by their roles.
 
 <details><summary>Tools (Maintenance assistance)</summary>
-<br />
 
+The purpose of tools are to help developer in many ways (by keeping the code safe, helping to bootstrap tasks etc..).
 - [Eslint-config](https://github.com/SlimIO/Eslint-config) - ESLint configuration
 - [TSD](https://github.com/SlimIO/tsd) - SlimIO TypeScript definition
 - [Discord BOT](https://github.com/SlimIO/Bot) - Discord.js BOT for our Discord (Manage webhooks etc..).
@@ -37,9 +37,17 @@ The following section contains all SlimIO packages and projects splited by their
 </details>
 
 <details><summary>Utils</summary>
-<br />
 
-- [Utils](https://github.com/SlimIO/Utils) - Utilities Functions
+Utils projects and packages are created to answer specific need of one or many internal projects.
+- [Utils](https://github.com/SlimIO/Utils) - SlimIO internal utils Functions
+- [lstree](https://github.com/SlimIO/lstree) - System Tree Printer as CLI (with a Node.js API)
+- [is](https://github.com/SlimIO/is) - JavaScript type checker for Node.js
+- [ArgParser](https://github.com/SlimIO/ArgParser) - Secure and reliable Command Line Argument parser for SlimIO.
+- [Queue](https://github.com/SlimIO/Queue) - Queue Class for internal usage.
+- [Lazy](https://github.com/SlimIO/Lazy) - Setup lazy properties on JavaScript Object (used in SlimIO/Units).
+- [SafeEmitter](https://github.com/SlimIO/safeEmitter) - Node.js EventEmitter like but with Error isolation to avoid Dep18.
+- [Unzipper](https://github.com/SlimIO/unzipper) - Modern async/await yauzl wrapper to unzip .zip file.
+- [Nodejs-Downloader](https://github.com/SlimIO/Nodejs-downloader) - Node.js binary and headers downloader
 </details>
 
 <details><summary>Core & Agent</summary>
