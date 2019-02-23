@@ -48,11 +48,24 @@ Utils projects and packages are created to answer specific need of one or many i
 - [SafeEmitter](https://github.com/SlimIO/safeEmitter) - Node.js EventEmitter like but with Error isolation to avoid Dep18.
 - [Unzipper](https://github.com/SlimIO/unzipper) - Modern async/await yauzl wrapper to unzip .zip file.
 - [Nodejs-Downloader](https://github.com/SlimIO/Nodejs-downloader) - Node.js binary and headers downloader
+- [Timer](https://github.com/SlimIO/Timer) - Driftless timer interval for Node.js.
+- [MIBParser](https://github.com/SlimIO/MIBParser) - SNMP MIB File parser.
+- [npm-registry](https://github.com/SlimIO/Npm-registry) - npm registry programmatically API
+- [ConfigMigration](https://github.com/SlimIO/ConfigMigration) - SlimIO Config Migration with JSON Schema.
+- [Immutable](https://github.com/SlimIO/Immutable) - Immutable Objects
+- [Struct](https://github.com/SlimIO/Struct) - Struct implementation in JavaScript
+- [BufferSchema](https://github.com/SlimIO/BufferSchema) - ArrayBuffer and TypedArray syntax.
+- [Github](https://github.com/SlimIO/github) - Download and extract github repository.
+- [TimeMap](https://github.com/SlimIO/TimeMap) - ES6 Map-Like implementation with keys that have a defined timelife
 </details>
 
 <details><summary>Core & Agent</summary>
 <br />
 
+- [Core]()
+- [Agent]()
+- [Config](https://github.com/SlimIO/Config) - SlimIO - Reactive and Safe JSON Configuration loader
+- [IPC](https://github.com/SlimIO/ipc) - Node.js end-to-end IPC (Inter Process Communication). 
 </details>
 
 <details><summary>Addons</summary>
@@ -63,11 +76,18 @@ Utils projects and packages are created to answer specific need of one or many i
 <details><summary>Integration Tools</summary>
 <br />
 
+- [Manifest](https://github.com/SlimIO/Manifest) - SlimIO Manifest file
+- [CLI]() 
+- [AddonFactory]()
+- [TcpClient]()
 </details>
 
 <details><summary>API HTTP (Web Service)</summary>
 <br />
 
+- [Registry]()
+- [OpenAPI]()
+- [N-API-CI]()
 </details>
 
 <details><summary>C/C++ Binding</summary>
