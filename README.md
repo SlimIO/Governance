@@ -95,6 +95,10 @@ Utils projects and packages are created to answer specific need of one or many i
 <details><summary>C/C++ Binding</summary>
 <br />
 
+- [Windrive](https://github.com/SlimIO/Windrive) - Node.js binding which expose low-level Microsoft APIs on Logical Drive, Disk and Devices.
+- [Winservices](https://github.com/SlimIO/Winservices) - Node.js binding which expose low-level Microsoft APIs on Services.
+- [Winmem](https://github.com/SlimIO/Winmem) - Node.js binding which expose low-level Microsoft APIs on Memory.
+- [Winni](https://github.com/SlimIO/Winni) - Node.js binding which expose low-level Microsoft APIs on Network Interfaces, Adapter Addresses and IF_ROW.
 </details>
 
 <details><summary>Archive/Deprecated</summary>
