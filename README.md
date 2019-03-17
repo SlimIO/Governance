@@ -1,7 +1,7 @@
 # Governance
 ![discord](https://img.shields.io/discord/359783688403156994.svg?style=flat)
 
-SlimIO - Governance &amp; Documentation repository
+SlimIO - Governance &amp; Documentation repository.
 
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
@@ -16,13 +16,15 @@ Feel free to join us on discord to ask questions !
 
 [![ES-Community](https://discordapp.com/api/guilds/359783688403156994/embed.png?style=banner2)](https://discord.gg/YA87kR2)
 
-## Collaborators
+## Collaborators & Contributors
+The people below are collaborators of the SlimIO project or contributor on one/many open-source projects.
 
 - [fraxken](https://github.com/fraxken) - GENTILHOMME Thomas &lt;gentilhomme.thomas@gmail.com&gt;
 - [Aleksander](https://github.com/AlexandreMalaj) - MALAJ Alexandre &lt;alexandre.malaj@gmail.com>&gt;
 - [Captain](https://github.com/Captainfive) - MONTES Irvin &lt;vinou_montes@hotmail.fr&gt;
 - [GuismoJames](https://www.linkedin.com/in/jgentilhomme/) - GENTILHOMME Jonathan &lt;gentilhomme.jonathan@gmail.com&gt;
 - [Marko](https://github.com/Markobobby) - MALAJ Mark &lt;Malaj1.mark@gmail.com&gt;
+- [Nico](https://github.com/Dafyh) - MARTEAU Nicolas &lt;nico_mart@hotmail.fr&gt;
 
 ## Available Repositories
 The following section contains all SlimIO packages and projects splited by their roles.
