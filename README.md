@@ -36,6 +36,8 @@ The purpose of tools are to help developer in many ways (by keeping the code saf
 - [TSD](https://github.com/SlimIO/tsd) - SlimIO TypeScript definition
 - [Discord BOT](https://github.com/SlimIO/Bot) - Discord.js BOT for our Discord (Manage webhooks etc..).
 - [Project Generator](https://github.com/SlimIO/Generator) - Generate a SlimIO project with a CLI.
+- [Dependency Analyser](https://github.com/SlimIO/Dependency-Analyser) - SlimIO projects and dependencies Network
+- [PSP](https://github.com/SlimIO/psp) - Project Struct Policy
 </details>
 
 <details><summary>Utils</summary>
@@ -59,37 +61,55 @@ Utils projects and packages are created to answer specific need of one or many i
 - [BufferSchema](https://github.com/SlimIO/BufferSchema) - ArrayBuffer and TypedArray syntax.
 - [Github](https://github.com/SlimIO/github) - Download and extract github repository.
 - [TimeMap](https://github.com/SlimIO/TimeMap) - ES6 Map-Like implementation with keys that have a defined timelife
+- [jsdoc](https://github.com/SlimIO/jsdoc) - JSDoc Generator
+- [OpenAPI](https://github.com/SlimIO/OpenAPI) - OpenAPI - Node.js Programmatically implementation (Spec Compliant)
+- [Async-cli-spinner](https://github.com/SlimIO/Async-cli-spinner) - CLI Spinners
+- [Pretty-JSON](https://github.com/SlimIO/Pretty-JSON) - stdout pretty (clean) JSON in your TTY
+- [sqlite-transaction](https://github.com/SlimIO/sqlite-transaction) - Transaction Manager for SQLite.
 </details>
 
 <details><summary>Core & Agent</summary>
 <br />
 
-- [Core]()
-- [Agent]()
+- [Core](https://github.com/SlimIO/Core) - SlimIO Core
+- [Agent](https://github.com/SlimIO/Agent) - SlimIO Agent
 - [Config](https://github.com/SlimIO/Config) - SlimIO - Reactive and Safe JSON Configuration loader
-- [IPC](https://github.com/SlimIO/ipc) - Node.js end-to-end IPC (Inter Process Communication). 
+- [IPC](https://github.com/SlimIO/ipc) - Node.js end-to-end IPC (Inter Process Communication).
+- [Alert](https://github.com/SlimIO/Alert) - Alarms utilities for Addons to interact with Events asynchronously
+- [Metrics](https://github.com/SlimIO/Metrics) - Metrics utilities for Addons to interact with Events asynchronously
+
+---
+Agent Built-in Addons:
+
+- [Events](https://github.com/SlimIO/Events) - Events Addon
+- [Socket](https://github.com/SlimIO/Socket) - Socket Addon
+- [Gate](https://github.com/SlimIO/Gate) - Gate Addon
+- [Alerting](https://github.com/SlimIO/Alerting) - Alerting Addon
+- [Aggregator](https://github.com/SlimIO/Aggregator) - Aggregator Addon
 </details>
 
 <details><summary>Addons</summary>
 <br />
 
+- [cpu](https://github.com/SlimIO/cpu-addon) - CPU Addon
+- [ihm](https://github.com/SlimIO/ihm) - Agent Interface Homme Machine
 </details>
 
 <details><summary>Integration Tools</summary>
 <br />
 
-- [Manifest](https://github.com/SlimIO/Manifest) - SlimIO Manifest file
-- [CLI]() 
-- [AddonFactory]()
-- [TcpClient]()
+- [Manifest](https://github.com/SlimIO/Manifest) - Manifest file for SlimIO projects
+- [CLI](https://github.com/SlimIO/CLI) - Product Command Line Interface
+- [AddonFactory](https://github.com/SlimIO/Addon-Factory) - Factory to build Addon programmatically
+- [TcpSDK](https://github.com/SlimIO/Tcp-Sdk) - TCP SDK to communicate in socket with the product
 </details>
 
 <details><summary>API HTTP (Web Service)</summary>
 <br />
 
-- [Registry]()
-- [OpenAPI]()
-- [N-API-CI]()
+- [Registry](https://github.com/SlimIO/Registry) - Addon registry
+- [Documentation](https://github.com/SlimIO/documentation) - SlimIO Doc Generator
+- [N-API-CI]() - CI Server for N-API projects
 </details>
 
 <details><summary>C/C++ Binding</summary>
