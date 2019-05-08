@@ -26,6 +26,8 @@ The people below are collaborators of the SlimIO project or contributor on one/m
 - [Marko](https://github.com/Markobobby) - MALAJ Mark &lt;Malaj1.mark@gmail.com&gt;
 - [Nico](https://github.com/Dafyh) - MARTEAU Nicolas &lt;nico_mart@hotmail.fr&gt;
 
+> **GENTILHOMME Thomas** is the Technical Leader of the SlimIO Project (feel free to contact him for any technical / business question).
+
 ## Available Repositories
 The following section contains all SlimIO packages and projects splited by their roles.
 
