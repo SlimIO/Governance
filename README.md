@@ -57,7 +57,7 @@ Utils projects and packages are created to answer specific need of one or many i
 - [Timer](https://github.com/SlimIO/Timer) - Driftless timer interval for Node.js.
 - [MIBParser](https://github.com/SlimIO/MIBParser) - SNMP MIB File parser.
 - [npm-registry](https://github.com/SlimIO/Npm-registry) - npm registry programmatically API
-- [ConfigMigration](https://github.com/SlimIO/ConfigMigration) - SlimIO Config Migration with JSON Schema.
+- [Config-Migration](https://github.com/SlimIO/ConfigMigration) - SlimIO Config Migration with JSON Schema.
 - [Immutable](https://github.com/SlimIO/Immutable) - Immutable Objects
 - [Struct](https://github.com/SlimIO/Struct) - Struct implementation in JavaScript
 - [BufferSchema](https://github.com/SlimIO/BufferSchema) - ArrayBuffer and TypedArray syntax.
@@ -68,6 +68,7 @@ Utils projects and packages are created to answer specific need of one or many i
 - [Async-cli-spinner](https://github.com/SlimIO/Async-cli-spinner) - CLI Spinners
 - [Pretty-JSON](https://github.com/SlimIO/Pretty-JSON) - stdout pretty (clean) JSON in your TTY
 - [sqlite-transaction](https://github.com/SlimIO/sqlite-transaction) - Transaction Manager for SQLite.
+- [Math](https://github.com/SlimIO/Math) - SlimIO - Node.js WebAssembly Metrology Math lib
 </details>
 
 <details><summary>Core & Agent</summary>
@@ -104,6 +105,8 @@ Agent Built-in Addons:
 - [CLI](https://github.com/SlimIO/CLI) - Product Command Line Interface
 - [AddonFactory](https://github.com/SlimIO/Addon-Factory) - Factory to build Addon programmatically
 - [TcpSDK](https://github.com/SlimIO/Tcp-Sdk) - TCP SDK to communicate in socket with the product
+- [Desktop](https://github.com/SlimIO/Desktop) - Application bureautique pour les intégrateurs (Client lourd)
+- [Bundler](https://github.com/SlimIO/Bundler) - SlimIO Archive (Addon & Core) Bundler
 </details>
 
 <details><summary>API HTTP (Web Service)</summary>
@@ -124,10 +127,16 @@ Agent Built-in Addons:
 - [Nixfs](https://github.com/SlimIO/Nixfs) - UNIX File System - Node.js low-level binding
 - [Nixmem](https://github.com/SlimIO/Nixmem) - UNIX Memory - Node.js low level binding
 - [Micro](https://github.com/SlimIO/Micro) - Micro timestamp for Node.js
+- [pam](https://github.com/SlimIO/pam) - Node.js N-API binding for Linux pam Authentication
 </details>
 
 <details><summary>Archive/Deprecated</summary>
 <br />
+
+- [levelmanager](https://github.com/SlimIO/levelmanager) - LevelDB (Database) - GUI Manager build with electron
+- [AgentOld](https://github.com/SlimIO/AgentOld) - Old SlimIO Agent POC
+- [Error](https://github.com/SlimIO/Error) - Slim.IO - Opinionated Error(s) handle/generator
+- [pm](https://github.com/SlimIO/pm) - SlimIO PM Configuration
 
 </details>
 
