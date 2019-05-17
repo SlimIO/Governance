@@ -37,7 +37,7 @@ The purpose of tools are to help developer in many ways (by keeping the code saf
 - [Eslint-config](https://github.com/SlimIO/Eslint-config) - ESLint configuration
 - [TSD](https://github.com/SlimIO/tsd) - SlimIO TypeScript definition
 - [Discord BOT](https://github.com/SlimIO/Bot) - Discord.js BOT for our Discord (Manage webhooks etc..).
-- [Project Generator](https://github.com/SlimIO/Generator) - Generate a SlimIO project with a CLI.
+- [Generator](https://github.com/SlimIO/Generator) - Generate a SlimIO project with a CLI.
 - [Dependency Analyser](https://github.com/SlimIO/Dependency-Analyser) - SlimIO projects and dependencies Network
 - [PSP](https://github.com/SlimIO/psp) - Project Struct Policy
 </details>
@@ -46,6 +46,7 @@ The purpose of tools are to help developer in many ways (by keeping the code saf
 
 Utils projects and packages are created to answer specific need of one or many internal projects.
 - [Utils](https://github.com/SlimIO/Utils) - SlimIO internal utils Functions
+- [Units](https://github.com/SlimIO/Units) - SlimIO Metric Units
 - [lstree](https://github.com/SlimIO/lstree) - System Tree Printer as CLI (with a Node.js API)
 - [is](https://github.com/SlimIO/is) - JavaScript type checker for Node.js
 - [ArgParser](https://github.com/SlimIO/ArgParser) - Secure and reliable Command Line Argument parser for SlimIO.
@@ -76,8 +77,10 @@ Utils projects and packages are created to answer specific need of one or many i
 
 - [Core](https://github.com/SlimIO/Core) - SlimIO Core
 - [Agent](https://github.com/SlimIO/Agent) - SlimIO Agent
+- [Addon](https://github.com/SlimIO/Addon) - Addon Container
+- [Scheduler](https://github.com/SlimIO/Scheduler) - Addon Callback Scheduler
 - [Config](https://github.com/SlimIO/Config) - SlimIO - Reactive and Safe JSON Configuration loader
-- [IPC](https://github.com/SlimIO/ipc) - Node.js end-to-end IPC (Inter Process Communication).
+- [ipc](https://github.com/SlimIO/ipc) - Node.js end-to-end IPC (Inter Process Communication).
 - [Alert](https://github.com/SlimIO/Alert) - Alarms utilities for Addons to interact with Events asynchronously
 - [Metrics](https://github.com/SlimIO/Metrics) - Metrics utilities for Addons to interact with Events asynchronously
 
@@ -137,6 +140,7 @@ Agent Built-in Addons:
 - [AgentOld](https://github.com/SlimIO/AgentOld) - Old SlimIO Agent POC
 - [Error](https://github.com/SlimIO/Error) - Slim.IO - Opinionated Error(s) handle/generator
 - [pm](https://github.com/SlimIO/pm) - SlimIO PM Configuration
+- [CI-TEST](https://github.com/SlimIO/CI_TEST) - CI_TEST
 
 </details>
 
