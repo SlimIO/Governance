@@ -18,10 +18,12 @@ What are the strenghts of our product?
 - 🔍 Self-monitoring of the product natively integrated.
 - 🔥 No configuration required to start an agent.
 - ❤️ A CLI available to help integrators, developers and customers to install, configure and build the product depending their needs.
-- ⚡️ Hot reload and upgrade with no loss of service.
+- ⚡️ Hot reload and upgrade with no loss of service (what we call **Shadow Mode**).
 - 🔒 Strong security policy (Avoid indirect dependencies, Regular audits etc).
-- 😱 Fully tested (**98%** coverage required 🔥) and documented.
+- 😱 Fully tested and documented (**98%** global coverage required 💪).
 - 🚀 Blazing fast for a limited memory cost (Around 30Mo of memory for a complete agent).
+
+> Note: The agent work in standalone with all features (Alerting, Aggregation, Interface, Reporting etc..). Centralisation is optional.
 
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
