@@ -6,7 +6,22 @@ SlimIO - Governance &amp; Documentation repository.
 ## Introduction
 SlimIO is a light and modulable monitoring Node.js / C / C++ agent. 
 
-Our goals is to bring the monitoring to the whole IT (Standalone, Cloud, Physical machine etc..) for both large and small businesses.
+Our goals is to bring the monitoring to the whole IT (Standalone, Cloud, On-premise) for both large and small businesses. We designed the product with **accessibility** and **maintainability** in mind (For us this is the key to success).
+
+What are the strenghts of our product?
+
+- 💰 Free and open-source (**free** for non-commercial usages).
+- 💥 Designed to be extensible with [addons](https://github.com/SlimIO/addon) (Addons can be published and downloaded with the  [SlimIO Registry](https://github.com/SlimIO/Registry)).
+- 🌎 Cross-platform with no "**side-effects**" (We are working on unified high-level interfaces for Windows and UNIX).
+- 🚄 The core modules has been designed following [Reactive Pattern](https://en.wikipedia.org/wiki/Reactive_programming).
+- 📉 Consume system resources smartly and wisely (We are focusing on the goal of **1%** of system memory consumption to run a normal Agent).
+- 🔍 Self-monitoring of the product natively integrated.
+- 🔥 No configuration required to start an agent.
+- ❤️ A CLI available to help integrators, developers and customers to install, configure and build the product depending their needs.
+- ⚡️ Hot reload and upgrade with no loss of service.
+- 🔒 Strong security policy (Avoid indirect dependencies, Regular audits etc).
+- 😱 Fully tested (**98%** coverage required 🔥) and documented.
+- 🚀 Blazing fast for a limited memory cost (Around 30Mo of memory for a complete agent).
 
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
