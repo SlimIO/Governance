@@ -23,7 +23,6 @@ What are the strenghts of our product?
 - ⚡️ Hot reload and upgrade with no loss of service (what we call **Shadow Mode**).
 - 🔒 Strong security policy (Avoid indirect dependencies, Regular audits etc).
 - 😱 Fully tested and documented (**98%** global coverage required 💪).
-- 🚀 Blazing fast for a limited memory cost (Around 30Mo of memory for a complete agent).
 
 > Note: The agent work in standalone with all features (Alerting, Aggregation, Interface, Reporting etc..). Centralisation is optional.
 
