@@ -27,6 +27,12 @@ What are the strenghts of our product?
 
 > Note: The agent work in standalone with all features (Alerting, Aggregation, Interface, Reporting etc..). Centralisation is optional.
 
+What are the weakness of our product?
+
+- Javascript is not statically compiled.. So we have to embed Node.js (which include V8 Engine) with the core (it cost ~ **17Mo** in size).
+- There is some isolation issues when addons are running in the same process. We are working to fix these issues in the long-term with Asynchronous Realm and Node.js Workers to run custom Addons.
+- V8 require high amount of memory to optimize slow interpreted code into low level machine code (CSA etc). This is the price we pay for most of the listed top strengths (We truly believe that this trade is beneficial in the long term).
+
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
 
