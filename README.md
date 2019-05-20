@@ -3,11 +3,17 @@
 
 SlimIO - Governance &amp; Documentation repository.
 
+## Introduction
+SlimIO is a light and modulable monitoring Node.js / C / C++ agent. 
+
+Our goals is to bring the monitoring to the whole IT (Standalone, Cloud, Physical machine etc..) for both large and small businesses.
+
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
 
 Google Drive (French):
-- [Architecture Technique](https://docs.google.com/document/d/15e4z7Ev7ObohDWgZwGkd6PDq-cWtC54aUvPSP2finZw/edit?usp=sharing)
+- [Politique de Mise à jour (Update policy)](https://docs.google.com/document/d/163Fb4HufSck27VW1ZWeEoDPPKGCnVKBo-6Zxbt2Bj64/edit?usp=sharing)
+- [Architecture Technique (Technical Architecture)](https://docs.google.com/document/d/15e4z7Ev7ObohDWgZwGkd6PDq-cWtC54aUvPSP2finZw/edit?usp=sharing)
 
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
