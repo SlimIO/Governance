@@ -6,7 +6,9 @@ SlimIO - Governance &amp; Documentation repository.
 ## Introduction
 SlimIO is a light and modulable monitoring Node.js / C / C++ agent. 
 
-Our goals is to bring the monitoring to the whole IT (Standalone, Cloud, On-premise) for both large and small businesses. We designed the product with **accessibility** and **maintainability** in mind (For us this is the key to success).
+Our goals is to bring the monitoring to the whole IT (Embedded system, Cloud, On-premise) for both large and small businesses. We designed the product with **accessibility** and **maintainability** in mind (For us this is the key to success).
+
+Each covered features are part of an Addon (one feature = one addon). Our default metrology set of addons has been designed to monitore local host in first place, but they will also have the ability to complete a remote monitoring for those who want an agentless solution (with support for the most common protocols like SNMP and WMI).
 
 What are the strenghts of our product?
 
