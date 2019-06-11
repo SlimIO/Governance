@@ -34,6 +34,8 @@ What are the weakness of our product?
 
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
+- [SlimIO Starter Guide](./docs/get_started.md)
+- [Create your first SlimIO Addon](./docs/first_addon.md)
 
 Google Drive (French):
 - [Politique de Mise à jour (Update policy)](https://docs.google.com/document/d/163Fb4HufSck27VW1ZWeEoDPPKGCnVKBo-6Zxbt2Bj64/edit?usp=sharing)
