@@ -3,7 +3,7 @@
 ## For who ?
 This guide has been designed for Node.js/Javascript developers.
 
-> we assumes that you have already installed and set up a local agent.
+> We assumes that you have already installed and set up a local agent.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ $ npm install @slimio/cli -g
 Go to the root of your Agent and run the SlimIO `--create` command:
 ```bash
 $ cd Agent
-$ slimio --create
+$ slimio create
 ```
 
 And then select **Addon**, and enter the name you want.
@@ -44,3 +44,8 @@ module.exports = addonName;
 
 A complete API Documentation of Addon can be found [here](https://github.com/SlimIO/Addon).
 
+<p align="center">
+<img src="./images/addon.svg" width="650">
+</p>
+
+By default an Addon already chip with some **Callbacks** and **Events**.
