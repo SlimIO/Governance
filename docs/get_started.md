@@ -54,7 +54,7 @@ $ slimio init
 The CLI will then install the **complete agent** (which include five **built-in** addon).
 
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/359783689040953354/583392486077104142/install.gif" width="650">
+<img src="./images/cli_init.gif" width="650">
 </p>
 
 The command can be customised to choose the directory name and eventually initialize with additionals addons (for example to install **ihm**, **prism** etc..). Addons must be separated by **comma**.
@@ -71,6 +71,11 @@ $ npm start
 ```
 
 ## Add addon
+
+<p align="center">
+<img src="./images/cli_add1.gif" width="650">
+</p>
+
 If you want to install additional addons, just go to the root of the agent and run following command:
 
 ```bash
@@ -99,6 +104,10 @@ If you want to add as disabled by default use the `-d` option.
 ```bash
 $ slimio add -d cpu-addon
 ```
+
+<p align="center">
+<img src="./images/cli_add2.gif" width="650">
+</p>
 
 ## Agent configuration
 TBC
