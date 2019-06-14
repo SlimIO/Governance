@@ -55,7 +55,21 @@ $ slimio add cpu-addon
 $ slimio add https://github.com/SlimIO/cpu-addon
 ```
 
-By default all addon(s) are writted as active in **agent.json**. If you want to add as disabled by default use the `-d` option.
+By default all addon(s) are writted as active in **agent.json**.
+```json
+{
+    "addons": {
+        "cpu": {
+            "active": true, // <-- active by default
+            "standalone": false
+        }
+    }
+}
+```
+
+> Note: for more information on agent.json fields, check [Agent configuration](https://github.com/SlimIO/Agent#agent-configuration)
+
+If you want to add as disabled by default use the `-d` option.
 
 ```bash
 $ slimio add -d cpu-addon
