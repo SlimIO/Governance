@@ -13,6 +13,31 @@ To setup the SlimIO CLI with **npm** just run in your terminal:
 $ npm install @slimio/cli -g
 ```
 
+And then run the **help** command
+```
+$ slimio --help
+
+  Usage
+    $ slimio <command> [options]
+
+  Available Commands
+    init       Initialize a new SlimIO Agent
+    add        Add an addon to the agent
+    create     Create bunch of files for the agent
+    service    Create an agent service
+    build      Build the agent
+    connect    Build the agent
+
+  For more info, run any command with the `--help` flag
+    $ slimio init --help
+    $ slimio add --help
+
+  Options
+    -v, --version    Displays current version
+    -h, --help       Displays this message
+```
+
+
 ## Manual installation
 For anyone who want to known how to setup an Agent without the help of the CLI.. follow the [Getting Started](https://github.com/SlimIO/Agent#getting-started) on the Agent repository.
 
