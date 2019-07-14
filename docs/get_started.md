@@ -24,7 +24,6 @@ $ slimio --help
     init       Initialize a new SlimIO Agent
     add        Add an addon to the agent
     create     Create bunch of files for the agent
-    service    Create an agent service
     build      Build the agent
     connect    Build the agent
 
