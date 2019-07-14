@@ -18,15 +18,15 @@ To setup the SlimIO CLI with **npm** just run in your terminal:
 $ npm install @slimio/cli -g
 ```
 
+> Dont hesitate to check the [CLI guide](https://github.com/SlimIO/Governance/blob/master/docs/use_cli.md)
+
 ## Getting Started
 
-Go to the root of your Agent and run the SlimIO `--create` command:
+Go to the root of your Agent and run the SlimIO `create` command:
 ```bash
 $ cd Agent
-$ slimio create
+$ slimio create addon --name addonName
 ```
-
-And then select **Addon**, and enter the name you want.
 
 The generated code will be the following (where `addonName` is the name of the addon):
 ```js
@@ -34,9 +34,9 @@ const Addon = require("@slimio/addon");
 
 const addonName = new Addon("addonName"); 
 
-addonName.on("start", () => {
+addonName.on("start", async() => {
     // Tell the core that your addon is ready !
-    addonName.ready();
+    await addonName.ready();
 });
 
 module.exports = addonName;
@@ -49,3 +49,10 @@ A complete API Documentation of Addon can be found [here](https://github.com/Sli
 </p>
 
 By default an Addon already chip with some **Callbacks** and **Events**.
+
+## Register and schedule a callback
+TBC
+
+## Addon state (started, ready and awake)
+TBC
+
