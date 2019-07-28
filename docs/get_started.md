@@ -4,8 +4,7 @@
 
 The purpose of this guide is to allow Node.js / Javascript developers to initialize the slimio agent locally at first, then we will see in the next how to add slimio addons.
 
-If you already know how to install a local slimio agent, please refer to this [link] for the rest of the guide
-(https://github.com/SlimIO/Governance/blob/master/docs/first_addon.md#create-your-first-slimio-addon)
+If you already know how to install a local slimio agent, please refer to this [link](https://github.com/SlimIO/Governance/blob/master/docs/first_addon.md#create-your-first-slimio-addon) for the rest of the guide
 
 ## Requirements
 
