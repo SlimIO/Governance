@@ -3,13 +3,13 @@
 ## For who ?
 This guide has been designed for Node.js/Javascript developers.
 
-> We assumes that you have already installed and set up a local agent.
+> We assumes that you have already installed and set up a local agent. If not, please refer to this [link](https://github.com/SlimIO/Governance/blob/master/docs/get_started.md#slimio-starter-guide)
 
 ## Requirements
 
 - [Node.js](https://nodejs.org/en/) version 10 or higher.
 - [Git](https://git-scm.com/) (**for manual installation**).
-- [SlimIO CLI](https://github.com/SlimIO/CLI)
+- [SlimIO CLI](https://github.com/SlimIO/CLI#cli)
 
 > ⚠️ Node.js must be installed first to get access to npm.
 
@@ -18,17 +18,17 @@ To setup the SlimIO CLI with **npm** just run in your terminal:
 $ npm install @slimio/cli -g
 ```
 
-> Dont hesitate to check the [CLI guide](https://github.com/SlimIO/Governance/blob/master/docs/use_cli.md)
+> Dont hesitate to check the [CLI guide](https://github.com/SlimIO/Governance/blob/master/docs/use_cli.md#use-cli)
 
 ## Getting Started
 
-Go to the root of your Agent and run the SlimIO `create` command:
+Go to the root of your Agent folder and run the SlimIO `create` command:
 ```bash
-$ cd Agent
+$ cd yourAgentFolder
 $ slimio create addon --name addonName
 ```
 
-The generated code will be the following (where `addonName` is the name of the addon):
+The generated code will be the following (where `addonName` is the name of the addon you specified):
 ```js
 const Addon = require("@slimio/addon"); 
 
@@ -42,7 +42,7 @@ addonName.on("start", async() => {
 module.exports = addonName;
 ```
 
-A complete API Documentation of Addon can be found [here](https://github.com/SlimIO/Addon).
+A complete API Documentation of Addon can be found [here](https://github.com/SlimIO/Addon#addon).
 
 <p align="center">
 <img src="./images/addon.svg" width="650">
@@ -51,7 +51,40 @@ A complete API Documentation of Addon can be found [here](https://github.com/Sli
 By default an Addon already chip with some **Callbacks** and **Events**.
 
 ## Register and schedule a callback
-TBC
+
+There is two ways to register a callback:
+
+>The callback should be an Asynchronous Function (Synchronous function will be rejected with a TypeError).
+
+```js
+myAddon.registerCallback("callback_name", async function() {
+    console.log("callbackName has been executed!");
+});
+```
+>Please, be sure to avoid Anonymous function as much possible!
+Or by passing the callback reference as the name (The function can't be anonymous, else it will throw an Error).
+
+```js
+async function callback_name() {
+    console.log("callbackName has been executed!");
+}
+myAddon.registerCallback(callback_name);
+```
+>Callback name should be writted by following the snake_case convention snake_case !
+
+Schedule a callback execution interval. Use the package @slimio/scheduler to achieve a scheduler !
+
+```js
+const Scheduler = require("@slimio/scheduler");
+const Addon = require("@slimio/addon");
+
+const myAddon = new Addon("myAddon");
+
+myAddon.registerCallback(async function sayHelloEveryOneSecond() {
+    console.log("hello world");
+});
+myAddon.schedule("sayHelloEveryOneSecond", new Scheduler({ interval: 1 }));
+```
 
 ## Addon state (started, ready and awake)
 TBC
