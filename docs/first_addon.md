@@ -97,12 +97,60 @@ Addon is extended with a SlimIO Safe EventEmitter. Five kinds of events can be t
 | ready | When the developer trigger ready() method to tell the Core that the addon is Ready for events
 | message | When the developer want to Send a lazy message to a given target formatted as following: addon.callback, the returned value is an Observable (package zen-observable).
 
+
+<details><summary>Start, Stop, Awake, Ready</summary>
+<br />
+
+```js
+const Addon = require("@slimio/addon");
+// Create addon
+const CPU = new Addon("cpu");
+
+// start event!
+CPU.on("start", async() => {
+    console.log("cpu addon started!");
+    // Do your things
+    // Tell the core that your addon is ready!
+    CPU.ready();
+});
+
+CPU.on("stop", async() => {
+    console.log("addon stopped");
+});
+
+module.exports = CPU;
+```
+
+> In this case, we want to have "events" ready before CPU addon start
+```js
+const Addon = require("@slimio/addon");
+// Create addon
+const CPU = new Addon("cpu").lockOn("events")
+
+// start event!
+CPU.on("awake", async() => {
+    console.log("cpu addon started!");
+    // Do your things
+    // Tell the core that your addon is ready!
+    CPU.ready();
+});
+
+CPU.on("stop", async() => {
+    console.log("addon stopped");
+});
+
+module.exports = CPU;
+```
+</details>
+
 >Message event
 <details><summary>sendMessage< T >(target: string, options?: MessageOptions): ZenObservable.ObservableLike< T ></summary>
 <br />
 
 >Send a lazy message to a given target formatted as following: `addon.callback`. The returned value is an Observable (package **zen-observable**).
 ```js
+const Addon = require("@slimio/addon");
+// Create addon
 const myAddon = new Addon("myAddon");
 
 myAddon.on("start", function() {
@@ -111,6 +159,12 @@ myAddon.on("start", function() {
         .subscribe(console.log);
     myAddon.ready();
 });
+
+myAddon.on("stop", async() => {
+    console.log("addon stopped");
+});
+
+module.exports = myAddon;
 ```
 >For Message Event , this are the Available options:
 
@@ -128,6 +182,8 @@ myAddon.on("start", function() {
 >you can send one lazy message to a given target. The returned value is a Promise (Use sendMessage under the hood).
 
 ```js
+const Addon = require("@slimio/addon");
+// Create addon
 const myAddon = new Addon("myAddon");
 
 myAddon.on("start", async function() {
@@ -136,6 +192,12 @@ myAddon.on("start", async function() {
 
     myAddon.ready();
 });
+
+myAddon.on("stop", async() => {
+    console.log("addon stopped");
+});
+
+module.exports = myAddon;
 ```
 
 Available options are the same as **sendMessage()**. If options is an Array, the message options will be constructed as follow
