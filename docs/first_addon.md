@@ -3,7 +3,7 @@
 ## For who ?
 This guide has been designed for Node.js/Javascript developers.
 
-> We assumes that you have already installed and set up a local agent. If not, please refer to this [link](https://github.com/SlimIO/Governance/blob/master/docs/get_started.md#slimio-starter-guide)
+> We assumes that you have already installed and set up a local agent. If not, please refer to this [guide](https://github.com/SlimIO/Governance/blob/master/docs/get_started.md#slimio-starter-guide)
 
 ## Requirements
 
@@ -65,12 +65,12 @@ myAddon.registerCallback("callback_name", async function() {
 Or by passing the callback reference as the name (The function can't be anonymous, else it will throw an Error).
 
 ```js
-async function callback_name() {
+async function callbackName() {
     console.log("callbackName has been executed!");
 }
-myAddon.registerCallback(callback_name);
+myAddon.registerCallback(callbackName);
 ```
->Callback name should be writted by following the snake_case convention snake_case !
+> if Callback name isn't writted by following the snake_case convention, it will be set automatically !
 
 Schedule a callback execution interval. Use the package @slimio/scheduler to achieve a scheduler !
 
@@ -80,10 +80,10 @@ const Addon = require("@slimio/addon");
 
 const myAddon = new Addon("myAddon");
 
-myAddon.registerCallback(async function sayHelloEveryOneSecond() {
+myAddon.registerCallback(async function say_hello_every_one_second() {
     console.log("hello world");
 });
-myAddon.schedule("sayHelloEveryOneSecond", new Scheduler({ interval: 1 }));
+myAddon.schedule("say_hello_every_one_second", new Scheduler({ interval: 1 }));
 ```
 
 ## Addon Events states ( start, stop, awake, ready, message )
