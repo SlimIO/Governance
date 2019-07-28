@@ -86,6 +86,56 @@ myAddon.registerCallback(async function sayHelloEveryOneSecond() {
 myAddon.schedule("sayHelloEveryOneSecond", new Scheduler({ interval: 1 }));
 ```
 
-## Addon state (started, ready and awake)
-TBC
+## Addon Events states ( start, stop, awake, ready )
+Addon is extended with a SlimIO Safe EventEmitter. Five kinds of events can be triggered:
 
+| event | description |
+| --- | --- |
+| start | When the core ask the addon to start |
+| stop | When the core ask the addon to stop |
+| awake | When the addon is ready to awake (all locks are ok) |
+| ready | When the developer trigger ready() method to tell the Core that the addon is Ready for events
+| message | When the developer want to Send a lazy message to a given target formatted as following: addon.callback, the returned value is an Observable (package zen-observable).
+
+>For Message Event , this are the Available options:
+
+| name | default value | description |
+| --- | --- | --- |
+| args | Empty Array | Callback arguments |
+| noReturn | false | If `true`, the method will return void 0 instead of a new Observable |
+| timeout | 5000 | Timeout delay (before the hook expire) |
+
+</details>
+
+<details><summary>sendOne< T >(target: string, options?: MessageOptions | any[]): Promise< T ></summary>
+<br />
+
+>you can send one lazy message to a given target. The returned value is a Promise (Use sendMessage under the hood).
+
+```js
+const myAddon = new Addon("myAddon");
+
+myAddon.on("start", async function() {
+    const addons = await myAddon.sendOne("gate.list_addons");
+    console.log(addons);
+
+    myAddon.ready();
+});
+```
+</details>
+
+<details><summary>sendMessage< T >(target: string, options?: MessageOptions): ZenObservable.ObservableLike< T ></summary>
+<br />
+
+Send a lazy message to a given target formatted as following: `addon.callback`. The returned value is an Observable (package **zen-observable**).
+```js
+const myAddon = new Addon("myAddon");
+
+myAddon.on("start", function() {
+    myAddon
+        .sendMessage("cpu.get_info")
+        .subscribe(console.log);
+    myAddon.ready();
+});
+```
+</details>
