@@ -143,7 +143,7 @@ module.exports = CPU;
 ```
 </details>
 
-##Message event
+## Message event
 <details><summary>sendMessage< T >(target: string, options?: MessageOptions): ZenObservable.ObservableLike< T ></summary>
 <br />
 
