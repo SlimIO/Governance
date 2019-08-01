@@ -24,8 +24,8 @@ $ npm install @slimio/cli -g
 
 Go to the root of your Agent folder and run the SlimIO `create` command:
 ```bash
-$ cd yourAgentFolder
-$ slimio create addon --name addonName
+$ cd **yourAgentFolder**
+$ slimio create addon --name **addonName**
 ```
 
 The generated code will be the following (where `addonName` is the name of the addon you specified):
@@ -52,27 +52,27 @@ By default an Addon already chip with some **Callbacks** and **Events**.
 
 ## Register and schedule a callback
 
-There is two ways to register a callback:
+There is two ways to register a `callback`:
 
->The callback should be an Asynchronous Function (Synchronous function will be rejected with a TypeError).
+> ⚠️ The callback should be an Asynchronous Function (Synchronous function will be rejected with a TypeError).
 
 ```js
 myAddon.registerCallback("callback_name", async function() {
-    console.log("callbackName has been executed!");
+    console.log("callback_Name has been executed!");
 });
 ```
->Please, be sure to avoid Anonymous function as much possible!
+>⚠️ Please, be sure to avoid Anonymous function as much possible!
 Or by passing the callback reference as the name (The function can't be anonymous, else it will throw an Error).
 
 ```js
 async function callbackName() {
-    console.log("callbackName has been executed!");
+    console.log("callback_Name has been executed!");
 }
 myAddon.registerCallback(callbackName);
 ```
-> if Callback name isn't writted by following the snake_case convention, it will be set automatically !
+> if Callback `name` isn't writted by following the `snake_case` convention, it will be set automatically !
 
-Schedule a callback execution interval. Use the package @slimio/scheduler to achieve a scheduler !
+`Schedule` a callback execution interval. Use the package @slimio/scheduler to achieve a scheduler !
 
 ```js
 const Scheduler = require("@slimio/scheduler");
@@ -95,7 +95,7 @@ Addon is extended with a SlimIO Safe EventEmitter. Five kinds of events can be t
 | stop | When the core ask the addon to stop |
 | awake | When the addon is ready to awake (all locks are ok) |
 | ready | When the developer trigger ready() method to tell the Core that the addon is Ready for events
-| message | When the developer want to Send a lazy message to a given target formatted as following: addon.callback, the returned value is an Observable (package zen-observable).
+| message | When the developer want to Send a lazy message to a given target formatted as following: addon.callback, the returned value is an Observable (package [zen-observable](https://github.com/zenparsing/zen-observable)).
 
 
 <details><summary>Start, Stop, Awake, Ready</summary>
@@ -121,7 +121,7 @@ CPU.on("stop", async() => {
 module.exports = CPU;
 ```
 
-> In this case, we want to have "events" ready before CPU addon start
+> In this case, we want the "events" to be ready before the CPU addon is started, so we use `lockon` on `events`, and `awake` to wait to receive the "ready" message from `events` to launch our addon scripts.
 ```js
 const Addon = require("@slimio/addon");
 // Create addon
@@ -143,11 +143,11 @@ module.exports = CPU;
 ```
 </details>
 
->Message event
+##Message event
 <details><summary>sendMessage< T >(target: string, options?: MessageOptions): ZenObservable.ObservableLike< T ></summary>
 <br />
 
->Send a lazy message to a given target formatted as following: `addon.callback`. The returned value is an Observable (package **zen-observable**).
+>Send a lazy message to a given target formatted as following: `addon.callback`. The returned value is an Observable (package [zen-observable](https://github.com/zenparsing/zen-observable)).
 ```js
 const Addon = require("@slimio/addon");
 // Create addon
@@ -166,7 +166,7 @@ myAddon.on("stop", async() => {
 
 module.exports = myAddon;
 ```
->For Message Event , this are the Available options:
+>For **Message Event** , this are the Available options:
 
 | name | default value | description |
 | --- | --- | --- |
@@ -179,7 +179,7 @@ module.exports = myAddon;
 <details><summary>sendOne< T >(target: string, options?: MessageOptions | any[]): Promise< T ></summary>
 <br />
 
->you can send one lazy message to a given target. The returned value is a Promise (Use sendMessage under the hood).
+>you can send *one* lazy message to a given target. The returned value is a `Promise` (Use sendMessage under the hood).
 
 ```js
 const Addon = require("@slimio/addon");
