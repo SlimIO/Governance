@@ -4,10 +4,10 @@
 - [Git](https://git-scm.com/) (**for manual installation**).
 
 ## Summary
-1. Can't push because someone else pushed before me [link](#1.-can't-push-because-someone-else-pushed-before-me)
-2. How to remove the latest commits? [link](#2.-how-to-remove-the-latest-commits-?)
-3. How to change my latest commit? [link](#3.-how-to-change-my-latest-commit-?)
-4. I forget to add a file to my commit, how to add it simply !? [link](#4.-I-forget-to-add-a-file-to-my-commit-how-to-add-it-simply-!?)
+1. Can't push because someone else pushed before me [link](#1-can't-push-because-someone-else-pushed-before-me)
+2. How to remove the latest commits? [link](#2-how-to-remove-the-latest-commits-)
+3. How to change my latest commit? [link](#3-how-to-change-my-latest-commit)
+4. I forget to add a file to my commit, how to add it simply !? [link](#4-i-forget-to-add-a-file-to-my-commit-how-to-add-it-simply-)
 
 # 1. Can't push because someone else pushed before me
 
