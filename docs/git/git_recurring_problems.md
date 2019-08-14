@@ -165,12 +165,24 @@ $ git commit --amend --no-edit
 
 Imagine that you have just pushed a new feature on your project and that you are adding the next, a partner informs you of an urgent crash to settle on your project but you do not want to lose the work that you have started on your new feature.
 
->You can use the following command to cut out your current `tracked` change to the local repository you are working on so that you can make your patch, and then put over the previously cut part.
+>You can use the following command to cut out your current change to the local repository you are working on so that you can make your patch, and then put over the previously cut part.
+
+<p align="left">
+<img src="../images/git/stash_pop.png" width="650">
+</p>
 
 ```bash
 $ git stash
 ```
+>Cut out the current and local changes
+
+```bash
+$ git stash pop
+```
+>Re-apply the current and local changes
 
 <p align="left">
 <img src="../images/git/stash.png" width="650">
 </p>
+
+>More infos on stash [HERE](https://git-scm.com/docs/git-stash).
