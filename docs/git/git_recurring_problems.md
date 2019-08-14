@@ -8,6 +8,7 @@
 2. How to remove the latest commits? [link](#2-how-to-remove-the-latest-commits-)
 3. How to change my latest commit? [link](#3-how-to-change-my-latest-commit)
 4. I forget to add a file to my commit, how to add it simply !? [link](#4-i-forget-to-add-a-file-to-my-commit-how-to-add-it-simply-)
+5. I work on the master branch, I need to stop what i'm actually doing to fix something important ! [link](#5-i-work-on-the-master-branch,-I-need-to-stop-what-i'm-actually-doing-to-fix-something-important-!)
 
 # 1. Can't push because someone else pushed before me
 
@@ -157,4 +158,19 @@ $ git commit --amend --no-edit
 ```
 <p align="left">
 <img src="../images/git/forget_to_add_before_push.png" width="650">
+</p>
+
+**[Summary](#summary)**
+# 5. I work on the master branch, I need to stop what i'm actually doing to fix something important !
+
+Imagine that you have just pushed a new feature on your project and that you are adding the next, a partner informs you of an urgent crash to settle on your project but you do not want to lose the work that you have started on your new feature.
+
+>You can use the following command to cut out your current `tracked` change to the local repository you are working on so that you can make your patch, and then put over the previously cut part.
+
+```bash
+$ git stash
+```
+
+<p align="left">
+<img src="../images/git/stash.png" width="650">
 </p>

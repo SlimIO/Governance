@@ -28,3 +28,25 @@ $ git push -u repository_distant ma_branche_de_developpement
 `The git push and git pull commands can then work with this branch from any computer connected to the repository.`
 
 >You can now create your feature, when finished, you can push your work on the branch, you just have to merge your branch with the master branch.
+
+## Merging a branch into master
+
+>Go to the project github page, you should see the "Compare and pull request" button, click on it :
+
+<p align="left">
+<img src="../images/git/pull_request.png" width="650">
+</p>
+
+`You can edit the message or add a description before confirming.`
+
+>⚠️ Make sure you compare your branch with the master.
+
+<p align="left">
+<img src="../images/git/pull_request_tab.png" width="650">
+</p>
+
+>The "pull request" is created, if it does not create any conflicts with the master branch you can fuss it by pressing the "Merge pull request" button.
+
+<p align="left">
+<img src="../images/git/auto_merge.png" width="650">
+</p>
