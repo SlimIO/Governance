@@ -63,116 +63,134 @@ The people below are collaborators of the SlimIO project or contributor on one/m
 ## Available Repositories
 The following section contains all SlimIO packages and projects splited by their roles.
 
-<details><summary>Tools (Maintenance assistance)</summary>
+<details><summary>archived</summary>
 
-The purpose of tools are to help developer in many ways (by keeping the code safe, helping to bootstrap tasks etc..).
-- [Eslint-config](https://github.com/SlimIO/Eslint-config) - ESLint configuration
-- [TSD](https://github.com/SlimIO/tsd) - SlimIO TypeScript definition
-- [Discord BOT](https://github.com/SlimIO/Bot) - Discord.js BOT for our Discord (Manage webhooks etc..).
-- [Generator](https://github.com/SlimIO/Generator) - Generate a SlimIO project with a CLI.
-- [Dependency Analyser](https://github.com/SlimIO/Dependency-Analyser) - SlimIO projects and dependencies Network
-- [PSP](https://github.com/SlimIO/psp) - Project Struct Policy
-</details>
-
-<details><summary>Utils</summary>
-
-Utils projects and packages are created to answer specific need of one or many internal projects.
-- [Utils](https://github.com/SlimIO/Utils) - SlimIO internal utils Functions
-- [Units](https://github.com/SlimIO/Units) - SlimIO Metric Units
-- [lstree](https://github.com/SlimIO/lstree) - System Tree Printer as CLI (with a Node.js API)
-- [is](https://github.com/SlimIO/is) - JavaScript type checker for Node.js
-- [ArgParser](https://github.com/SlimIO/ArgParser) - Secure and reliable Command Line Argument parser for SlimIO.
-- [Queue](https://github.com/SlimIO/Queue) - Queue Class for internal usage.
-- [Lazy](https://github.com/SlimIO/Lazy) - Setup lazy properties on JavaScript Object (used in SlimIO/Units).
-- [SafeEmitter](https://github.com/SlimIO/safeEmitter) - Node.js EventEmitter like but with Error isolation to avoid Dep18.
-- [Unzipper](https://github.com/SlimIO/unzipper) - Modern async/await yauzl wrapper to unzip .zip file.
-- [Nodejs-Downloader](https://github.com/SlimIO/Nodejs-downloader) - Node.js binary and headers downloader
-- [Timer](https://github.com/SlimIO/Timer) - Driftless timer interval for Node.js.
-- [MIBParser](https://github.com/SlimIO/MIBParser) - SNMP MIB File parser.
-- [npm-registry](https://github.com/SlimIO/Npm-registry) - npm registry programmatically API
-- [Config-Migration](https://github.com/SlimIO/ConfigMigration) - SlimIO Config Migration with JSON Schema.
-- [Immutable](https://github.com/SlimIO/Immutable) - Immutable Objects
-- [Struct](https://github.com/SlimIO/Struct) - Struct implementation in JavaScript
-- [BufferSchema](https://github.com/SlimIO/BufferSchema) - ArrayBuffer and TypedArray syntax.
-- [Github](https://github.com/SlimIO/github) - Download and extract github repository.
-- [TimeMap](https://github.com/SlimIO/TimeMap) - ES6 Map-Like implementation with keys that have a defined timelife
-- [jsdoc](https://github.com/SlimIO/jsdoc) - JSDoc Generator
-- [OpenAPI](https://github.com/SlimIO/OpenAPI) - OpenAPI - Node.js Programmatically implementation (Spec Compliant)
-- [Async-cli-spinner](https://github.com/SlimIO/Async-cli-spinner) - CLI Spinners
-- [Pretty-JSON](https://github.com/SlimIO/Pretty-JSON) - stdout pretty (clean) JSON in your TTY
-- [sqlite-transaction](https://github.com/SlimIO/sqlite-transaction) - Transaction Manager for SQLite.
-- [Math](https://github.com/SlimIO/Math) - SlimIO - Node.js WebAssembly Metrology Math lib
-</details>
-
-<details><summary>Core & Agent</summary>
-<br />
-
-- [Core](https://github.com/SlimIO/Core) - SlimIO Core
-- [Agent](https://github.com/SlimIO/Agent) - SlimIO Agent
-- [Addon](https://github.com/SlimIO/Addon) - Addon Container
-- [Scheduler](https://github.com/SlimIO/Scheduler) - Addon Callback Scheduler
-- [Config](https://github.com/SlimIO/Config) - SlimIO - Reactive and Safe JSON Configuration loader
-- [ipc](https://github.com/SlimIO/ipc) - Node.js end-to-end IPC (Inter Process Communication).
-- [Alert](https://github.com/SlimIO/Alert) - Alarms utilities for Addons to interact with Events asynchronously
-- [Metrics](https://github.com/SlimIO/Metrics) - Metrics utilities for Addons to interact with Events asynchronously
-
----
-Agent Built-in Addons:
-
-- [Events](https://github.com/SlimIO/Events) - Events Addon
-- [Socket](https://github.com/SlimIO/Socket) - Socket Addon
-- [Gate](https://github.com/SlimIO/Gate) - Gate Addon
-- [Alerting](https://github.com/SlimIO/Alerting) - Alerting Addon
-- [Aggregator](https://github.com/SlimIO/Aggregator) - Aggregator Addon
-</details>
-
-<details><summary>Addons</summary>
-<br />
-
-- [cpu](https://github.com/SlimIO/cpu-addon) - CPU Addon
-- [ihm](https://github.com/SlimIO/ihm) - Agent Interface Homme Machine
-</details>
-
-<details><summary>Integration Tools</summary>
-<br />
-
-- [Manifest](https://github.com/SlimIO/Manifest) - Manifest file for SlimIO projects
-- [CLI](https://github.com/SlimIO/CLI) - Product Command Line Interface
-- [AddonFactory](https://github.com/SlimIO/Addon-Factory) - Factory to build Addon programmatically
-- [TcpSDK](https://github.com/SlimIO/Tcp-Sdk) - TCP SDK to communicate in socket with the product
-- [Desktop](https://github.com/SlimIO/Desktop) - Application bureautique pour les intégrateurs (Client lourd)
-- [Bundler](https://github.com/SlimIO/Bundler) - SlimIO Archive (Addon & Core) Bundler
-</details>
-
-<details><summary>API HTTP (Web Service)</summary>
-<br />
-
-- [Registry](https://github.com/SlimIO/Registry) - Addon registry
-- [Documentation](https://github.com/SlimIO/documentation) - SlimIO Doc Generator
-- [N-API-CI]() - CI Server for N-API projects
-</details>
-
-<details><summary>C/C++ Binding</summary>
-<br />
-
-- [Windrive](https://github.com/SlimIO/Windrive) - Node.js binding which expose low-level Microsoft APIs on Logical Drive, Disk and Devices.
-- [Winservices](https://github.com/SlimIO/Winservices) - Node.js binding which expose low-level Microsoft APIs on Services.
-- [Winmem](https://github.com/SlimIO/Winmem) - Node.js binding which expose low-level Microsoft APIs on Memory.
-- [Winni](https://github.com/SlimIO/Winni) - Node.js binding which expose low-level Microsoft APIs on Network Interfaces, Adapter Addresses and IF_ROW.
-- [Nixfs](https://github.com/SlimIO/Nixfs) - UNIX File System - Node.js low-level binding
-- [Nixmem](https://github.com/SlimIO/Nixmem) - UNIX Memory - Node.js low level binding
-- [Micro](https://github.com/SlimIO/Micro) - Micro timestamp for Node.js
-- [pam](https://github.com/SlimIO/pam) - Node.js N-API binding for Linux pam Authentication
-</details>
-
-<details><summary>Archive/Deprecated</summary>
-<br />
-
-- [levelmanager](https://github.com/SlimIO/levelmanager) - LevelDB (Database) - GUI Manager build with electron
-- [AgentOld](https://github.com/SlimIO/AgentOld) - Old SlimIO Agent POC
+TBC
+- [AgentOld](https://github.com/SlimIO/AgentOld) - Old SlimIO Agent
 - [Error](https://github.com/SlimIO/Error) - Slim.IO - Opinionated Error(s) handle/generator
-- [pm](https://github.com/SlimIO/pm) - SlimIO PM Configuration
-- [CI-TEST](https://github.com/SlimIO/CI_TEST) - CI_TEST
+- [levelmanager](https://github.com/SlimIO/levelmanager) - LevelDB (Database) - GUI Manager build with electron
+
+</details>
+
+<details><summary>Addon</summary>
+
+SlimIO Addons
+- [cpu-addon](https://github.com/SlimIO/cpu-addon) - SlimIO CPU Addon
+- [Events](https://github.com/SlimIO/Events) - SlimIO - Events (Built-in Addon)
+- [Gate](https://github.com/SlimIO/Gate) - Built-in Addon Gate
+- [Socket](https://github.com/SlimIO/Socket) - Built-in Socket Addon
+- [Alerting](https://github.com/SlimIO/Alerting) - SlimIO - Alerting Addon
+- [Aggregator](https://github.com/SlimIO/Aggregator) - SlimIO - Metrics Aggregator Addon
+- [cpu](https://github.com/SlimIO/cpu) - Windows & Unix Native Node.js binding - CPU Monitoring
+- [ihm](https://github.com/SlimIO/ihm) - Agent IHM (Interface Homme Machine)
+- [Prism](https://github.com/SlimIO/Prism) - Prism - Distribution Server Addon
+
+</details>
+
+<details><summary>Package</summary>
+
+Classical 'npm' packages
+- [Core](https://github.com/SlimIO/Core) - SlimIO Core
+- [Config](https://github.com/SlimIO/Config) - SlimIO - Reactive and Safe JSON Configuration loader
+- [Addon](https://github.com/SlimIO/Addon) - SlimIO Addon container
+- [Utils](https://github.com/SlimIO/Utils) - SlimIO Utilities Functions
+- [Scheduler](https://github.com/SlimIO/Scheduler) - SlimIO - Scheduler/Time Walk for Node.js
+- [Config-Migration](https://github.com/SlimIO/Config-Migration) - SlimIO JSON Schema Migration (Payload Migration)
+- [Mib-Parser](https://github.com/SlimIO/Mib-Parser) - Pure Asynchronous JavaScript (Node.JS) MIB Parser
+- [is](https://github.com/SlimIO/is) - SlimIO IS - Node.js JavaScript Type checker 
+- [Safe-emitter](https://github.com/SlimIO/Safe-emitter) - Safe Node.js EventEmitter designed for isolation
+- [Units](https://github.com/SlimIO/Units) - SlimIO Metric Units
+- [Arg-parser](https://github.com/SlimIO/Arg-parser) - SlimIO - Secure and reliable Node.js Argv Parser
+- [Addon-Factory](https://github.com/SlimIO/Addon-Factory) - SlimIO - Factory to build Addon programmatically
+- [Metrics](https://github.com/SlimIO/Metrics) - This package provide a developer interface to interact with Events Addon
+- [Timer](https://github.com/SlimIO/Timer) - SlimIO - Node.js Driftless Interval Timer
+- [Buffer-Schema](https://github.com/SlimIO/Buffer-Schema) - SlimIO Buffer Schema
+- [Lazy](https://github.com/SlimIO/Lazy) - SlimIO Little lib to set Lazy Properties on JavaScript Objects!
+- [Struct](https://github.com/SlimIO/Struct) - Node.js Schema Structure
+- [Npm-registry](https://github.com/SlimIO/Npm-registry) - Node.js npm registry (GET) API with TypeScript def
+- [Queue](https://github.com/SlimIO/Queue) - SlimIO - Queue Class designed for SlimIO Core
+- [Nodejs-downloader](https://github.com/SlimIO/Nodejs-downloader) - SlimIO - Node.js binary and headers downloader
+- [Tcp-Sdk](https://github.com/SlimIO/Tcp-Sdk) - SlimIO - TCP SDK to communicate in socket with the product
+- [github](https://github.com/SlimIO/github) - Download and Extract Github repository 
+- [ipc](https://github.com/SlimIO/ipc) - SlimIO - Node.js Inter Process Communication
+- [lstree](https://github.com/SlimIO/lstree) - System Tree Printer as CLI (with a Node.js API)
+- [unzipper](https://github.com/SlimIO/unzipper) - Node.js Modern Yauzl wrapper
+- [OpenAPI](https://github.com/SlimIO/OpenAPI) - OpenAPI - Node.js Programmatically implementation (Spec Compliant)
+- [Alert](https://github.com/SlimIO/Alert) - SlimIO Addon Alarms utilities
+- [Immutable](https://github.com/SlimIO/Immutable) - SlimIO Immutable Static Objects and Values
+- [Manifest](https://github.com/SlimIO/Manifest) - SlimIO Project Manifest (.TOML)
+- [TimeMap](https://github.com/SlimIO/TimeMap) - ES6 Map-Like implementation with keys that have a defined timelife
+- [Math](https://github.com/SlimIO/Math) - SlimIO - Node.js WebAssembly Metrology Math lib
+- [sqlite-transaction](https://github.com/SlimIO/sqlite-transaction) - SQLite Transaction Manager for SlimIO events
+- [Unit-testing](https://github.com/SlimIO/Unit-testing) - SlimIO - Unit testing framework (WIP)
+- [psp](https://github.com/SlimIO/psp) - SlimIO - Project structure policy
+- [jsdoc](https://github.com/SlimIO/jsdoc) - Blazing fast 🚀 JSDoc generator/parser
+- [Registry-SDK](https://github.com/SlimIO/Registry-SDK) - Node.js SDK For the SlimIO Registry API
+- [Desktop](https://github.com/SlimIO/Desktop) - SlimIO - Application bureautique pour les intégrateurs (Client lourd)
+- [Pretty-JSON](https://github.com/SlimIO/Pretty-JSON) - Stdout JSON in your terminal
+- [Async-cli-spinner](https://github.com/SlimIO/Async-cli-spinner) - Elegant Asynchronous Terminal (CLI) Spinner for Node.js
+- [Bundler](https://github.com/SlimIO/Bundler) - SlimIO Archive (Addon & Core) Bundler
+- [Iterator](https://github.com/SlimIO/Iterator) - Iterators Utils
+- [Blog](https://github.com/SlimIO/Blog) - SlimIO Blog
+- [arg-checker](https://github.com/SlimIO/arg-checker) - SlimIO Argument Checker
+- [Lock](https://github.com/SlimIO/Lock) - SlimIO Node.js Semaphore for async/await
+- [MySQL](https://github.com/SlimIO/MySQL) - MySQL addon
+- [pretty-stack](https://github.com/SlimIO/pretty-stack) - Pretty Stack Trace to stdout in TTY
+- [FSC](https://github.com/SlimIO/FSC) - Slimio - FSC (File System Controller)
+- [logger](https://github.com/SlimIO/logger) - SlimIO Sonic Logger
+- [Grapher](https://github.com/SlimIO/Grapher) - 
+- [wcwidth](https://github.com/SlimIO/wcwidth) - Port of C's wcwidth() and wcswidth()
+- [Profiles](https://github.com/SlimIO/Profiles) - SlimIO - Addon Profiles Manager
+- [Tarball](https://github.com/SlimIO/Tarball) - SlimIO archive (for addons and modules) tarball packer/extractor.
+
+</details>
+
+<details><summary>Degraded</summary>
+
+Projects that are not matching our psp policies
+- [Eslint-config](https://github.com/SlimIO/Eslint-config) - SlimIO ESLint configuration
+- [tsd](https://github.com/SlimIO/tsd) - TypeScript definitions for SlimIO projects
+
+</details>
+
+<details><summary>NAPI</summary>
+
+Node.js Native bindings writted in C/C++
+- [Winni](https://github.com/SlimIO/Winni) - Windows Network Interfaces - Node.js low-level binding
+- [Windrive](https://github.com/SlimIO/Windrive) - Windows Drive (disk) & Devices - Node.js low level binding
+- [Winelog](https://github.com/SlimIO/Winelog) - Windows Events log reader - Node.JS low-level binding
+- [Winservices](https://github.com/SlimIO/Winservices) - Windows Services - Node.js low level binding
+- [Winmem](https://github.com/SlimIO/Winmem) - Windows Memory - Node.js low level binding
+- [Nixni](https://github.com/SlimIO/Nixni) - UNIX Network Interfaces - Node.JS low level binding
+- [Nixmem](https://github.com/SlimIO/Nixmem) - UNIX Memory - Node.js low level binding
+- [Micro](https://github.com/SlimIO/Micro) - NodeJS C NAPI low level binding to get high resolution timestamp (in microseconds)
+- [Nixfs](https://github.com/SlimIO/Nixfs) - UNIX File System - Node.js low-level binding
+- [Nixdevices](https://github.com/SlimIO/Nixdevices) - UNIX System Devices - NodeJS low level binding
+- [Nixproc](https://github.com/SlimIO/Nixproc) - Node.js - N-API Binding
+- [pam](https://github.com/SlimIO/pam) - Node.js N-API binding for Linux pam Authentication
+
+</details>
+
+<details><summary>Service</summary>
+
+Web API projects
+- [Agent](https://github.com/SlimIO/Agent) - SlimIO Agent
+- [Registry](https://github.com/SlimIO/Registry) - SlimIO - Addon registry
+- [N-API-CI](https://github.com/SlimIO/N-API-CI) - Node.js N-API CI Server
+- [Discord-Bot](https://github.com/SlimIO/Discord-Bot) - DiscordBot allow management of the notifications to avoid spam (greenkeeper, snyk, trello, drive ...)
+- [Dependency-Analyser](https://github.com/SlimIO/Dependency-Analyser) - SlimIO - Dependency Analyser (Draw a network of all SlimIO Projects)
+- [Gource-view](https://github.com/SlimIO/Gource-view) - Gource Generator for SlimIO (And any github organization)
+
+</details>
+
+<details><summary>CLI</summary>
+
+Command Line Interface packages/projects
+- [Generator](https://github.com/SlimIO/Generator) - SlimIO - Project & Addons Generator
+- [CLI](https://github.com/SlimIO/CLI) - SlimIO - CLI (Command Line Interface)
+- [documentation](https://github.com/SlimIO/documentation) - SlimIO Documentation Generator
+- [Markdown-Dependencies](https://github.com/SlimIO/Markdown-Dependencies) - Create/Update the Dependencies section in README.md
+- [Sync](https://github.com/SlimIO/Sync) - SlimIO Synchronizer - Pull, Update and track Node.js projects state (outdated, psp policies...)
 
 </details>
 
