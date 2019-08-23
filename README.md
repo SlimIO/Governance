@@ -4,11 +4,18 @@
 SlimIO - Governance &amp; Documentation repository.
 
 ## Introduction
-SlimIO is a light and modulable monitoring Node.js / C / C++ agent. 
+SlimIO is a light and modulable monitoring solution writted in Node.js / C / C++. 
 
-Our goals is to bring the monitoring to the whole IT (Embedded system, Cloud, On-premise) for both large and small businesses. We designed the product with **accessibility** and **maintainability** in mind (For us this is the key to success).
+Our goals is to bring the monitoring to the whole IT (Embedded system, Cloud, On-premise) for both large and small businesses (It's not a promise **but a destination** to keep the project on the right track). We designed and crafted the product with **accessibility**, **maintainability** and **flexibility** in mind at every development steps (For us this is the key to build a successfull product).
 
-Each covered features are part of an Addon (one feature = one addon). Our default metrology set of addons has been designed to monitore local host in first place, but they will also have the ability to complete a remote monitoring for those who want an agentless solution (with support for the most common protocols like SNMP and WMI).
+Each covered features and core components are part of an Addon (one role/feature = one addon). That's really the strength of our solution that allow us to:
+- Register the monitoring in a devops process (Monolithic monitoring is born dead).
+- Apply security patches **very quickly**.
+- Evolving given part of the software without having to break the whole product (and **when possible** with no service degradation).
+- Easier to fire hunt and debug.
+- Etc...
+
+Our default metrology set of addons has been designed to monitore local host in first place, but they will also have the ability to complete a remote monitoring for those who want an agentless solution (with support for the most common protocols like SNMP and WMI).
 
 What are the strenghts of our product?
 
@@ -19,7 +26,7 @@ What are the strenghts of our product?
 - 📉 Consume system resources smartly and wisely (We are focusing on the goal of **1%** of system memory consumption to run a normal Agent).
 - 🔍 Self-monitoring of the product natively integrated.
 - 🔥 No configuration required to start an agent.
-- ❤️ A CLI available to help integrators, developers and customers to install, configure and build the product depending their needs.
+- ❤️ A CLI available to help integrators, developers and customers to install, configure and build the product (by adapting to your needs).
 - ⚡️ Hot reload and upgrade with no loss of service (what we call **Shadow Mode**).
 - 🔒 Strong security policy (Avoid indirect dependencies, Regular audits etc).
 - 😱 Fully tested and documented (**98%** global coverage required 💪).
@@ -28,7 +35,7 @@ What are the strenghts of our product?
 
 What are the weakness of our product?
 
-- Javascript is not statically compiled.. So we have to embed Node.js (which include V8 Engine) with the core (it cost ~ **17Mo** in size).
+- Javascript is not statically compiled.. So we have to embed Node.js (which include V8 Engine) with the core (it cost ~ **~30Mo** in size).
 - There is some isolation issues when addons are running in the same process. We are working to fix these issues in the long-term with Asynchronous Realm and Node.js Workers to run custom Addons.
 - V8 require high amount of memory to optimize slow interpreted code into low level machine code (CSA etc). This is the price we pay for most of the listed top strengths (We truly believe that this trade is beneficial in the long term).
 
