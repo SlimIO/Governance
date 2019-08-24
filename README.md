@@ -9,7 +9,7 @@ SlimIO is a light and modulable monitoring solution writted in Node.js / C / C++
 Our goals is to bring the monitoring to the whole IT (Embedded system, Cloud, On-premise) for both large and small businesses (It's not a promise **but a destination** to keep the project on the right track). We designed and crafted the product with **accessibility**, **maintainability** and **flexibility** in mind at every development steps (For us this is the key to build a successfull product).
 
 Each covered features and core components are part of an Addon (one role/feature = one addon). That's really the strength of our solution that allow us to:
-- Register the monitoring in a devops process (Monolithic monitoring is born dead).
+- Register the monitoring in a devops process.
 - Apply security patches **very quickly**.
 - Evolving given part of the software without having to break the whole product (and **when possible** with no service degradation).
 - Easier to fire hunt and debug.
