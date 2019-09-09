@@ -2,7 +2,7 @@
 
 ## Description
 
-The purpose of this guide is to allow Node.js / Javascript developers to initialize the slimio agent locally at first, then we will see in the next how to add slimio addons.
+The purpose of this guide is to allow Node.js / Javascript developers to initialize the slimio agent locally at first, then we will see in the next how to create your own SlimIO addons.
 
 If you already know how to install a local slimio agent, please refer to this [link](https://github.com/SlimIO/Governance/blob/master/docs/first_addon.md#create-your-first-slimio-addon) for the rest of the guide
 
@@ -127,3 +127,20 @@ $ slimio remove ihm
 </p>
 
 By default the addon will be deleted from the local **agent** configuration. (agent.json).
+
+## Configure agent.json
+The SlimIO CLI expose a `configure` command that allow you to easily manage and edit **agent.json**. By default this command run a REPL if there is no arguments provided (Like the example bellow).
+
+<p align="center">
+<img src="https://i.imgur.com/r5GxOAL.png">
+</p>
+
+Running `help` into this REPL will give you the complete list of available commands.
+
+There commands can be runned without entering the REPL mode, few examples:
+```bash
+$ slimio configure sync
+$ slimio configure enable ihm,cpu
+```
+
+Notice that addons must be separated by a comma for `sync`, `enable` and `disable` commands.
