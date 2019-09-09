@@ -76,7 +76,7 @@ $ npm start
 ```
 Remember that to launch the agent, you must be at the root of it.
 
-## Add addon
+## Install / Add one or many addons
 
 <p align="center">
 <img src="./images/cli_add1.gif" width="650">
@@ -115,4 +115,15 @@ $ slimio add -d cpu-addon
 <img src="./images/cli_add2.gif" width="650">
 </p>
 
-TBC
+## Remove installed addon
+It is possible to completely remove **installed** addon with the `slimio remove` command. Let's imagine that we want to remove the ihm addon. Just run the following command in your terminal:
+
+```bash
+$ slimio remove ihm
+```
+
+<p align="center">
+<img src="https://i.imgur.com/8XWIamD.png" width="650">
+</p>
+
+By default the addon will be deleted from the local **agent** configuration. (agent.json).
