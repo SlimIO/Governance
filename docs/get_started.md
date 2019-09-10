@@ -44,6 +44,9 @@ $ slimio --help
 
 
 ## Manual installation
+
+> ⚠️ Manual installation require a lot of experience as a Node.js developer.
+
 For anyone who want to known how to setup an Agent without the help of the CLI.. follow the [Getting Started](https://github.com/SlimIO/Agent#getting-started) on the Agent repository.
 
 This repository describe how work an **Agent** and list **all his components** (must be useful if you want to dig deeper).
