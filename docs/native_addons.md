@@ -78,3 +78,12 @@ Useful links:
 - [gyp user documentation](https://gyp.gsrc.io/docs/UserDocumentation.md)
 - [gyp input format](https://gyp.gsrc.io/docs/InputFormatReference.md)
 
+## SlimIO manifest
+All SlimIO N-API projects must be configured with the type **NAPI** and the right target. Example with the Windrive manifest:
+
+```toml
+name = "windrive"
+version = "1.5.0"
+platform = "Windows"
+type = "NAPI"
+```
