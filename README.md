@@ -29,7 +29,7 @@ What are the strenghts of our product?
 - ❤️ A CLI available to help integrators, developers and customers to install, configure and build the product (by adapting to your needs).
 - ⚡️ Hot reload and upgrade with no loss of service (what we call **Shadow Mode**).
 - 🔒 Strong security policy (Avoid indirect dependencies, Regular audits etc).
-- 😱 Fully tested and documented (**98%** global coverage required 💪).
+- 😱 Fully tested and documented.
 
 > Note: The agent work in standalone with all features (Alerting, Aggregation, Interface, Reporting etc..). Centralisation is optional.
 
