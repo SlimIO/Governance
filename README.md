@@ -41,8 +41,8 @@ What are the weakness of our product?
 
 ## Documentation
 - [How to contribute to N-API Addons](./docs/native_addons.md)
-- [SlimIO Tooling for SlimIO developers](./docs/tooling.md)
-- [SlimIO Starter Guide](./docs/get_started.md)
+- [Tools for SlimIO developers & contributors](./docs/tooling.md)
+- [SlimIO - Agent Starter Guide](./docs/get_started.md)
 - [Create your first SlimIO Addon](./docs/first_addon.md)
 
 Google Drive (French):
