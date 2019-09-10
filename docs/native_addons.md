@@ -1,7 +1,7 @@
 # How to contribute to N-API Addons
 
 ## Requirements
-- Node.js v10 or higher (for N-API v3+)
+- [Node.js](https://nodejs.org/en/) v10 or higher (for N-API v3+)
 
 ## How to build a N-API addon
 Follow the [installation](https://github.com/nodejs/node-gyp#installation) instructions on the node-gyp package.
@@ -42,6 +42,39 @@ $ npx napi-headers --help
 N-API headers must be installed at the root of the project in the **./include** directory.
 
 ## Binding.gyp
-The binding.gyp is the configuration file for Low-level binding.
+A binding.gyp file describes the configuration to build your module, in a JSON-like format. This file gets placed in the root of your package, alongside package.json.
 
-> TBC
+A barebones gyp file appropriate for building a Node.js addon could look like:
+
+```json
+{
+    "targets": [
+        {
+            "target_name": "windrive",
+            "sources": [
+                "windrive.cpp"
+            ],
+            "include_dirs": [
+                "include",
+                "<!@(node -p \"require('node-addon-api').include\")"
+            ],
+            "dependencies": [
+                "<!(node -p \"require('node-addon-api').gyp\")"
+            ],
+            "defines": ["NAPI_DISABLE_CPP_EXCEPTIONS"],
+            "cflags!": [ "-fno-exceptions" ],
+            "cflags_cc!": [ "-fno-exceptions" ],
+            "msvs_settings": {
+                "VCCLCompilerTool": {
+                    "ExceptionHandling": 1
+                }
+            }
+        }
+    ]
+}
+```
+
+Useful links:
+- [gyp user documentation](https://gyp.gsrc.io/docs/UserDocumentation.md)
+- [gyp input format](https://gyp.gsrc.io/docs/InputFormatReference.md)
+
