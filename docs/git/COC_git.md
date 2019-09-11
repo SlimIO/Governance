@@ -1,5 +1,5 @@
 
-# This document contains best practices and tips for using git in a team.
+# Best practices and tips for using git in a team.
 
 ## 1. Adding a new feature on a Slimio project.
 
