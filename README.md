@@ -40,6 +40,9 @@ What are the weakness of our product?
 - V8 require high amount of memory to optimize slow interpreted code into low level machine code (CSA etc). This is the price we pay for most of the listed top strengths (We truly believe that this trade is beneficial in the long term).
 
 ## Documentation
+
+> ⚠️ There is no MVP of SlimIO yet. Dont expect a result for these documentation for now.
+
 - [How to contribute to N-API Addons](./docs/native_addons.md)
 - [Tools for SlimIO developers & contributors](./docs/tooling.md)
 - [SlimIO - Agent Starter Guide](./docs/get_started.md)
