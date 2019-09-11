@@ -48,6 +48,7 @@ What are the weakness of our product?
 Google Drive (French):
 - [Politique de Mise à jour (Update policy)](https://docs.google.com/document/d/163Fb4HufSck27VW1ZWeEoDPPKGCnVKBo-6Zxbt2Bj64/edit?usp=sharing)
 - [Architecture Technique (Technical Architecture)](https://docs.google.com/document/d/15e4z7Ev7ObohDWgZwGkd6PDq-cWtC54aUvPSP2finZw/edit?usp=sharing)
+- [Guide de sécurité](https://docs.google.com/document/d/1GRMbKmnibFZMQWzcVmwmcjLRVlKcFFrlEnfD8X8aNEg/edit?usp=sharing)
 
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
