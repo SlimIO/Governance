@@ -53,6 +53,10 @@ Google Drive (French):
 - [Architecture Technique (Technical Architecture)](https://docs.google.com/document/d/15e4z7Ev7ObohDWgZwGkd6PDq-cWtC54aUvPSP2finZw/edit?usp=sharing)
 - [Guide de sécurité](https://docs.google.com/document/d/1GRMbKmnibFZMQWzcVmwmcjLRVlKcFFrlEnfD8X8aNEg/edit?usp=sharing)
 
+Handle git problems on SlimIO:
+- [Best practices and tips for using git in a team](https://github.com/SlimIO/Governance/blob/master/docs/git/COC_git.md)
+- [Problems (with solution) encountered with the use of git](https://github.com/SlimIO/Governance/blob/master/docs/git/git_recurring_problems.md)
+
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
 
