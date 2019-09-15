@@ -18,13 +18,16 @@ L'avantage de nôtre projet est qu'il possède un large évantail de possibilit�
 Un idéal pour les stagiaires qui ont faim de connaissances ou qui souhaitent expérimenter des choses qui leur sont encore inconnues. Peut-être que
 cela éveillera une nouvelle vocation en vous ?
 
-## Accompagnement de A à Z
+> 👀 N'hésitez pas à regarder les projets dans le Github pour vous faire une idée.
+
+## Un accompagnement sur mesure
+
 Chez nous les stagiaires ont l'occasion de renforcer leurs connaissances en Javascript et de choisir de travailler sur les projets qui les intéressent le plus (par intérêt ou par passion).
 Pas particulièrement de contraintes, ici l'objectif est d'apprendre de nos erreurs et de prendre le temps de produire de la qualité (en accord avec la governance).
 
-L'objectif de nos stagiaires est donc d'apprendre et prendre le plus de plaisir possible. Nous mettons particulièrement l'accent sur la maîtrise des bases.
+L'objectif de nos stagiaires est donc d'apprendre et prendre le plus de plaisir possible.
 
-## L'accent sur
+Au cours du stage nous mettrons tout de même l'accent sur:
 - La maîtrise des fondamentaux JavaScript.
 - Découvrir les bonnes pratiques (ESLint, EditorConfig, etc..). L'objectif est de comprendre pourquoi et de ne pas appliquer des pratiques bêtement (elles ne sont pas forcément applicables à tous les contextes /situations).
 
@@ -34,7 +37,7 @@ L'objectif de nos stagiaires est donc d'apprendre et prendre le plus de plaisir 
 - Savoir communiquer et ne pas avoir peur d'intervenir / poser des questions.
 - Un microphone et un ordinateur.
 
-Nous travaillons tous à distance et communiquons à l'aide de Discord.js.
+Nous travaillons tous à distance et communiquons à l'aide de Discord.
 
 ## Nos anciens stagiaires
 - [MARTEAU Nicolas](https://www.linkedin.com/in/nico-mart/)
