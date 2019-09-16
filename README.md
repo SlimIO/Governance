@@ -41,7 +41,7 @@ What are the weakness of our product?
 
 ## Documentation
 
-> ⚠️ There is no MVP of SlimIO yet. Dont expect a result for these documentation for now.
+> ⚠️ There is no MVP of SlimIO yet. Dont expect to achieve something with these docs.
 
 - [How to contribute to N-API Addons](./docs/native_addons.md)
 - [Tools for SlimIO developers & contributors](./docs/tooling.md)
