@@ -65,6 +65,7 @@ Feel free to join us on discord to ask questions !
 [![ES-Community](https://discordapp.com/api/guilds/359783688403156994/embed.png?style=banner2)](https://discord.gg/YA87kR2)
 
 ## Collaborators & Contributors
+
 The people below are collaborators of the SlimIO project or contributor on one/many open-source projects.
 
 - [fraxken](https://github.com/fraxken) - GENTILHOMME Thomas &lt;gentilhomme.thomas@gmail.com&gt;
@@ -75,6 +76,13 @@ The people below are collaborators of the SlimIO project or contributor on one/m
 - [Nico](https://github.com/Dafyh) - MARTEAU Nicolas &lt;nico_mart@hotmail.fr&gt;
 
 > **GENTILHOMME Thomas** is the Technical Leader of the SlimIO Project (feel free to contact him for any technical / business question).
+
+<p align="center">Photos of us in our last dev camp</p>
+
+| | |
+| - | - |
+| <img src="https://i.imgur.com/keaL2Yf.jpg"> | <img src="https://i.imgur.com/WWML8S8.jpg"> |
+| <img src="https://i.imgur.com/TzTcrZ2.jpg"> | <img src="https://i.imgur.com/mSasDv5.jpg"> |
 
 ## Available Repositories
 The following section contains all SlimIO packages and projects splited by their roles.
