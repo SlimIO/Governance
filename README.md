@@ -4,58 +4,65 @@
 SlimIO - Governance &amp; Documentation repository.
 
 ## Introduction
-SlimIO is a light and modulable monitoring solution writted in Node.js / C / C++. 
+SlimIO is a light and modulable monitoring solution writted in Node.js / C / C++.
 
 Our goals is to bring the monitoring to the whole IT (Embedded system, Cloud, On-premise) for both large and small businesses (It's not a promise **but a destination** to keep the project on the right track). We designed and crafted the product with **accessibility**, **maintainability** and **flexibility** in mind at every development steps (For us this is the key to build a successfull product).
 
 Each covered features and core components are part of an Addon (one role/feature = one addon). That's really the strength of our solution that allow us to:
-- Register the monitoring in a devops process.
-- Apply security patches **very quickly**.
+- Register the monitoring in a [devops](https://en.wikipedia.org/wiki/DevOps) process/mentality.
+- Apply security patches **very quickly** (The goal is to avoid an architecture that push into transitive open-source code).
 - Evolving given part of the software without having to break the whole product (and **when possible** with no service degradation).
-- Easier to fire hunt and debug.
+- Easier to fire hunt and debug (like fire doors, we isolate each piece so that the fire does not spread).
+- Clean scope of what we have to self monitor.
 - Etc...
 
-Our default metrology set of addons has been designed to monitore local host in first place, but they will also have the ability to complete a remote monitoring for those who want an agentless solution (with support for the most common protocols like SNMP and WMI).
+Our default metrology set of addons has been designed to monitore local host in first place, but they will also have the ability to complete a remote monitoring for those who want an agentless solution (with support for the most common protocols like **SNMP** and **WMI**).
 
-What are the strenghts of our product?
+### What are the strenghts of our product?
 
-- 💰 Free and open-source (**free** for non-commercial usages).
-- 💥 Designed to be extensible with [addons](https://github.com/SlimIO/addon) (Addons can be published and downloaded with the  [SlimIO Registry](https://github.com/SlimIO/Registry)).
+- 💰 Agent free-to-use and open-source.
+- 🎨 Designed to be extensible and customizable with [addons](https://github.com/SlimIO/addon) (Addons can be published and downloaded with the  [SlimIO Registry](https://github.com/SlimIO/Registry)).
 - 🌎 Cross-platform with no "**side-effects**" (We are working on unified high-level interfaces for Windows and UNIX).
-- 🚄 The core modules has been designed following [Reactive Pattern](https://en.wikipedia.org/wiki/Reactive_programming).
+- 👀 The core modules has been designed following [Reactive Pattern](https://en.wikipedia.org/wiki/Reactive_programming).
 - 📉 Consume system resources smartly and wisely (We are focusing on the goal of **1%** of system memory consumption to run a normal Agent).
 - 🔍 Self-monitoring of the product natively integrated.
-- 🔥 No configuration required to start an agent.
+- 🚀 No configuration required to start an agent.
 - ❤️ A CLI available to help integrators, developers and customers to install, configure and build the product (by adapting to your needs).
 - ⚡️ Hot reload and upgrade with no loss of service (what we call **Shadow Mode**).
-- 🔒 Strong security policy (Avoid indirect dependencies, Regular audits etc).
-- 😱 Fully tested and documented.
+- 🔒 Strong security policy (Avoid indirect dependencies, Regular audits, Integrity checksum etc).
+- 📄 Fully documented.
+- 🚥 A lot of projects and packages with complete tests suites. (Some are more prone to Black box than White box).
 
-> Note: The agent work in standalone with all features (Alerting, Aggregation, Interface, Reporting etc..). Centralisation is optional.
+> Note: The agent work in standalone with all features (Alerting, Aggregation, Interface, Reporting etc..). Centralization is optional.
 
-What are the weakness of our product?
+### What are the weakness of our product?
 
-- Javascript is not statically compiled.. So we have to embed Node.js (which include V8 Engine) with the core (it cost ~ **~30Mo** in size).
-- There is some isolation issues when addons are running in the same process. We are working to fix these issues in the long-term with Asynchronous Realm and Node.js Workers to run custom Addons.
-- V8 require high amount of memory to optimize slow interpreted code into low level machine code (CSA etc). This is the price we pay for most of the listed top strengths (We truly believe that this trade is beneficial in the long term).
+- 📦 JavaScript is not statically compiled, so we have to embed the Node.js executable with the core (it cost ~ **~30mb** in size).
+- 🏠 There is some isolation issues when addons are running in the same process (These are not critical if the developer is not making big mistakes). We are working to fix these issues in the long-term with Asynchronous Realm and Node.js Workers to be able to achieve a fault-tolerant Agent.
+- 📈 V8 require high amount of memory to optimize slow interpreted code into low level machine code (CSA etc). The current memory footprint is between **15mo** and **20mo**.
+
+This is the price we pay for most of the listed top strengths (We truly believe that this trade is beneficial in the long term).
 
 ## Documentation
 
-> ⚠️ There is no MVP of SlimIO yet. Dont expect to achieve something with these docs.
+> ⚠️ There is no MVP of SlimIO yet. Dont expect to achieve monitoring with these docs (as a non-developer/contributor).
 
+### For developers and contributors
 - [How to contribute to N-API Addons](./docs/native_addons.md)
 - [Tools for SlimIO developers & contributors](./docs/tooling.md)
-- [SlimIO - Agent Starter Guide](./docs/get_started.md)
-- [Create your first SlimIO Addon](./docs/first_addon.md)
 
-Google Drive (French):
+#### Google Drive (French)
 - [Politique de Mise à jour (Update policy)](https://docs.google.com/document/d/163Fb4HufSck27VW1ZWeEoDPPKGCnVKBo-6Zxbt2Bj64/edit?usp=sharing)
 - [Architecture Technique (Technical Architecture)](https://docs.google.com/document/d/15e4z7Ev7ObohDWgZwGkd6PDq-cWtC54aUvPSP2finZw/edit?usp=sharing)
 - [Guide de sécurité](https://docs.google.com/document/d/1GRMbKmnibFZMQWzcVmwmcjLRVlKcFFrlEnfD8X8aNEg/edit?usp=sharing)
 
-Handle git problems on SlimIO:
+#### Recurrent problems with GIT on SlimIO
 - [Best practices and tips for using git in a team](https://github.com/SlimIO/Governance/blob/master/docs/git/COC_git.md)
 - [Problems (with solution) encountered with the use of git](https://github.com/SlimIO/Governance/blob/master/docs/git/git_recurring_problems.md)
+
+### For integrators
+- [SlimIO - Agent Starter Guide](./docs/get_started.md)
+- [Create your first SlimIO Addon](./docs/first_addon.md)
 
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
