@@ -71,18 +71,23 @@ Feel free to join us on discord to ask questions !
 
 [![ES-Community](https://discordapp.com/api/guilds/359783688403156994/embed.png?style=banner2)](https://discord.gg/YA87kR2)
 
-## Collaborators & Contributors
+## Team
 
-The people below are collaborators of the SlimIO project or contributor on one/many open-source projects.
+Core collaborators of the SlimIO project.
 
 - [fraxken](https://github.com/fraxken) - GENTILHOMME Thomas &lt;gentilhomme.thomas@gmail.com&gt;
 - [Aleksander](https://github.com/AlexandreMalaj) - MALAJ Alexandre &lt;alexandre.malaj@gmail.com&gt;
 - [Captain](https://github.com/Captainfive) - MONTES Irvin &lt;vinou_montes@hotmail.fr&gt;
 - [GuismoJames](https://www.linkedin.com/in/jgentilhomme/) - GENTILHOMME Jonathan &lt;gentilhomme.jonathan@gmail.com&gt;
+
+> **GENTILHOMME Thomas** is leading the project. Feel free to contact him for any technical and business questions.
+
+--- 
+
+Contributors on one and/or many open-source projects that touch the SlimIO project.
+
 - [Marko](https://github.com/Markobobby) - MALAJ Mark &lt;Malaj1.mark@gmail.com&gt;
 - [Nico](https://github.com/Dafyh) - MARTEAU Nicolas &lt;nico_mart@hotmail.fr&gt;
-
-> **GENTILHOMME Thomas** is the Technical Leader of the SlimIO Project (feel free to contact him for any technical / business question).
 
 <p align="center">Photos of us in our last dev camp</p>
 
