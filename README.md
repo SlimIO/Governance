@@ -3,6 +3,8 @@
 
 SlimIO - Governance &amp; Documentation repository.
 
+> 👀 [SlimIO Gource Youtube Video](https://www.youtube.com/watch?v=pMkiWtLNyjY)
+
 ## Introduction
 SlimIO is a light and modulable monitoring solution writted in Node.js / C / C++.
 
@@ -95,6 +97,8 @@ Contributors on one and/or many open-source projects that touch the SlimIO proje
 | - | - |
 | <img src="https://i.imgur.com/keaL2Yf.jpg"> | <img src="https://i.imgur.com/WWML8S8.jpg"> |
 | <img src="https://i.imgur.com/TzTcrZ2.jpg"> | <img src="https://i.imgur.com/mSasDv5.jpg"> |
+
+> 👀 if you'r a french student looking for a stage on JavaScript/Node.js, [we might be interested](https://github.com/SlimIO/Governance/blob/master/stage.md).
 
 ## Available Repositories
 The following section contains all SlimIO packages and projects splited by their roles (kind). Each "kind" of project is described by the [following documentation](https://github.com/SlimIO/Manifest#available-types). If you want a way of visualizing all SlimIO projects the [Dependency-Analyzer](https://github.com/SlimIO/Dependency-Analyser) project has been made for you !
