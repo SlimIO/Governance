@@ -97,7 +97,13 @@ Contributors on one and/or many open-source projects that touch the SlimIO proje
 | <img src="https://i.imgur.com/TzTcrZ2.jpg"> | <img src="https://i.imgur.com/mSasDv5.jpg"> |
 
 ## Available Repositories
-The following section contains all SlimIO packages and projects splited by their roles.
+The following section contains all SlimIO packages and projects splited by their roles (kind). Each "kind" of project is described by the [following documentation](https://github.com/SlimIO/Manifest#available-types). If you want a way of visualizing all SlimIO projects the [Dependency-Analyzer](https://github.com/SlimIO/Dependency-Analyser) project has been made for you !
+
+<p align="center">
+<img src="https://media.discordapp.net/attachments/359783689040953354/622219583121784893/unknown.png">
+</p>
+
+--- 
 
 <details><summary>archived</summary>
 
