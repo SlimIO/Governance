@@ -65,6 +65,7 @@ This is the price we pay for most of the listed top strengths (We truly believe 
 ### For integrators
 - [SlimIO - Agent Starter Guide](./docs/get_started.md)
 - [Create your first SlimIO Addon](./docs/first_addon.md)
+- [Manage alarms and metrics in Addons](./docs/manage_alarm_and_metric.md)
 
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
