@@ -42,6 +42,7 @@ $ slimio --help
     -h, --help       Displays this message
 ```
 
+> 👀 If you'r working with private SlimIO packages, think to setup [tokens](https://github.com/SlimIO/Governance/blob/master/docs/tooling.md#environment-variables).
 
 ## Manual installation
 
