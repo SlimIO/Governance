@@ -1,5 +1,7 @@
 # Governance
-![discord](https://img.shields.io/discord/359783688403156994.svg?style=flat)
+![love](https://forthebadge.com/images/badges/built-with-love.svg)
+![js](https://forthebadge.com/images/badges/made-with-javascript.svg)
+![foryou](https://forthebadge.com/images/badges/for-you.svg)
 
 SlimIO - Governance &amp; Documentation repository.
 
