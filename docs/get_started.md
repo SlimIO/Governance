@@ -83,10 +83,12 @@ $ slimio init dirName --add ihm,prism
 Now that your agent is installed you can launch it with
 ```bash
 $ cd agent # enter in the installed directory (if not done yet).
-$ npm start
+$ slimio start
 # OR without npm
 $ node index --autoreload 500
 ```
+
+> 👀 Complete documentation on the script argument [here](https://github.com/SlimIO/Agent#cli-options)
 
 ## Install / Add one or many addons
 
@@ -108,7 +110,7 @@ By default all addon(s) are writted as active in **agent.json**.
 {
     "addons": {
         "cpu": {
-            "active": true, // <-- active by default
+            "active": true,
             "standalone": false
         }
     }
@@ -117,14 +119,14 @@ By default all addon(s) are writted as active in **agent.json**.
 
 > 👀 📄 for more information on agent.json fields, check [Agent configuration](https://github.com/SlimIO/Agent#agent-configuration)
 
-If you want to add a disabled addon by default, use the -d option.
+If you want to add each addons as `active: false` add the `-d` (--disabled) option.
 
 ```bash
-$ slimio add -d cpu-addon
+$ slimio add cpu-addon -d 
 ```
 
 <p align="center">
-<img src="./images/cli_add2.gif" width="650">
+<img src="./images/cli_add2.gif">
 </p>
 
 ## Remove installed addon
@@ -135,21 +137,25 @@ $ slimio remove ihm
 ```
 
 <p align="center">
-<img src="https://i.imgur.com/8XWIamD.png" width="650">
+<img src="https://i.imgur.com/8XWIamD.png">
 </p>
 
-By default the addon will be deleted from the local **agent** configuration. (agent.json).
+By default the addon will be deleted from the local **agent** configuration. (agent.json). If for some reason the addon has been removed from **./addons** but not from **agent.json**, then just run a synchronization:
+
+```bash
+$ slimio config sync
+```
 
 ## Configure agent.json
-The SlimIO CLI expose a `config` command that allow you to easily manage and edit **agent.json**. By default this command run a REPL if there is no arguments provided (Like the example bellow).
+The SlimIO CLI expose a `config` command that allow you to easily manage and edit **agent.json**. By default this command run a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) (Real-eval-print-loop) if there is no arguments provided (Like the example bellow).
 
 <p align="center">
-<img src="https://i.imgur.com/r5GxOAL.png">
+<img src="./images/cli_config.gif">
 </p>
 
 Running `help` into this REPL will give you the complete list of available commands.
 
-There commands can be runned without entering the REPL mode, few examples:
+These commands can be runned without entering the REPL mode, few examples:
 ```bash
 $ slimio config sync
 $ slimio config enable ihm,cpu
