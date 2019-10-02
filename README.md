@@ -51,26 +51,20 @@ This is the price we pay for most of the listed top strengths (We truly believe 
 
 > ⚠️ There is no MVP of SlimIO yet. Dont expect to achieve monitoring with these docs (as a non-developer/contributor).
 
-### For developers and contributors
-- [How to contribute to N-API Addons](./docs/native_addons.md)
-- [Tools for SlimIO developers & contributors](./docs/tooling.md)
-
-#### Google Drive (French)
-- [Politique de Mise à jour (Update policy)](https://docs.google.com/document/d/163Fb4HufSck27VW1ZWeEoDPPKGCnVKBo-6Zxbt2Bj64/edit?usp=sharing)
-- [Architecture Technique (Technical Architecture)](https://docs.google.com/document/d/15e4z7Ev7ObohDWgZwGkd6PDq-cWtC54aUvPSP2finZw/edit?usp=sharing)
-- [Guide de sécurité](https://docs.google.com/document/d/1GRMbKmnibFZMQWzcVmwmcjLRVlKcFFrlEnfD8X8aNEg/edit?usp=sharing)
-
-#### Recurrent problems with GIT on SlimIO
-- [Best practices and tips for using git in a team](https://github.com/SlimIO/Governance/blob/master/docs/git/COC_git.md)
-- [Problems (with solution) encountered with the use of git](https://github.com/SlimIO/Governance/blob/master/docs/git/git_recurring_problems.md)
-
-### For integrators
 - [SlimIO - Agent Starter Guide](./docs/get_started.md)
 - [Create your first SlimIO Addon](./docs/first_addon.md)
 - [Manage alarms and metrics in Addons](./docs/manage_alarm_and_metric.md)
 
 ## Contribution Guidelines
-Before contributing, please check and read our [Code of conduct](./COC_POLICY.md).
+Before contributing, please check and read our [Code of conduct](./COC_POLICY.md). There is some guides available to help developers and contributors:
+
+- [How to contribute to N-API Addons](./docs/native_addons.md)
+- [Tools for SlimIO developers & contributors](./docs/tooling.md)
+
+Some french architectural/security documentation:
+- [Politique de Mise à jour (Update policy)](https://docs.google.com/document/d/163Fb4HufSck27VW1ZWeEoDPPKGCnVKBo-6Zxbt2Bj64/edit?usp=sharing)
+- [Architecture Technique (Technical Architecture)](https://docs.google.com/document/d/15e4z7Ev7ObohDWgZwGkd6PDq-cWtC54aUvPSP2finZw/edit?usp=sharing)
+- [Guide de sécurité](https://docs.google.com/document/d/1GRMbKmnibFZMQWzcVmwmcjLRVlKcFFrlEnfD8X8aNEg/edit?usp=sharing)
 
 Feel free to join us on discord to ask questions !
 
