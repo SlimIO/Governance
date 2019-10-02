@@ -4,7 +4,7 @@ L'équipe SlimIO est ouverte aux stagiaires par le biais de la structure de Thom
 une petite équipe d'environ cinq personnes qui travaillons avec amour à la création d'une solution de supervision métrologique open-source (n'hésitez pas 
 à lire le [README.md](https://github.com/SlimIO/Governance/blob/master/README.md) de la governance pour plus d'informations sur le projet).
 
-Nous travaillons sur une stack quasiment entièrement composée de Javascript aussi bien en front-end que back-end (il y a aussi un peu de C++ pour la métrologie).
+Nous travaillons sur une stack quasiment entièrement composée de JavaScript aussi bien en front-end que back-end (il y a aussi un peu de C++ pour la métrologie).
 L'avantage de nôtre projet est qu'il possède un large évantail de possibilité pour découvrir et apprendre:
 
 - API HTTP.
@@ -24,7 +24,7 @@ cela éveillera une nouvelle vocation en vous ?
 
 ## Un accompagnement sur mesure
 
-Chez nous les stagiaires ont l'occasion de renforcer leurs connaissances en Javascript et de choisir de travailler sur les projets et les tâches qui les intéressent le plus (par intérêt ou par passion).
+Chez nous les stagiaires ont l'occasion de renforcer leurs connaissances en JavaScript et de choisir de travailler sur les projets et les tâches qui les intéressent le plus (par intérêt ou par passion).
 Pas particulièrement de contraintes, ici l'objectif est d'apprendre de nos erreurs et de prendre le temps de produire de la qualité (en accord avec la governance).
 
 L'objectif de nos stagiaires est donc d'apprendre et prendre le plus de plaisir possible. Bien évidemment nous définirons des objectifs pour vous challenger et vous faire progresser un minimum.
@@ -45,7 +45,7 @@ Nous travaillons tous à distance et communiquons à l'aide de Discord. Les avan
 ## Nos anciens stagiaires
 
 ### [MARTEAU Nicolas](https://www.linkedin.com/in/nico-mart/)
-Nicolas a eu l'occasion de travailler à nos côtés pendant quatre mois. Le début du stage a été dédié à renforcer ses connaissances des bases Javascript (et aussi pour s'acclimater un peu à nos outils et nos méthodes). Nicolas nous à aidé à construire des projets qui ont aujourd'hui des impacts majeurs dans les cycles de mise à jour.
+Nicolas a eu l'occasion de travailler à nos côtés pendant quatre mois. Le début du stage a été dédié à renforcer ses connaissances des bases JavaScript (et aussi pour s'acclimater un peu à nos outils et nos méthodes). Nicolas nous à aidé à construire des projets qui ont aujourd'hui des impacts majeurs dans le cycle de maintenance des projets.
 
 Les projets en question:
 
