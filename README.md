@@ -53,6 +53,14 @@ The SlimIO project started with this simple question: **How to build a sustainab
 
 Our product has been created to be a polyvalent monitoring solution capable to answer a wide range of production cases (even if we are not doing it in the fastest and/or best way at the beginning). SlimIO remain neutral and bring a lot of tools on the table to allow developers to extend the product as they want very easily.
 
+- APM
+- Network
+- Infrastructure
+- Logs
+- Whatever you want
+
+Agentless or not. Cloud or on-premise.
+
 ## Documentation
 
 > ⚠️ There is no MVP of SlimIO yet. Dont expect to achieve monitoring with these docs (as a non-developer/contributor).
