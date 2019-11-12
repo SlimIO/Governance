@@ -20,23 +20,23 @@ $ npm install @slimio/cli -g
 Then, run the `--help` or `-h` command to known the complete list of available commands.
 ```
 $ slimio --help
- 
+
   Usage
     $ slimio <command> [options]
 
   Available Commands
-    init       Clone and install a complete SlimIO Agent
+    init       Clone and install a complete SlimIO Agent.
     add        Add one or many addon(s) to the local agent (Addon are enabled by default).
-    remove     Remove one or many addons from the local agent (Erase them from the disk)
-    create     Create/generate SlimIO files and addons
-    build      Build and compile an agent into an executable with Node.js bundled in it
-    archive    Create an addon archive
-    connect    Connect to a local or remote running agent
-    config     Configure a local agent or a remote running agent
-    debug      debug (navigate through local agent dump files)
-    start      start the local agent and enable/unlock advanced debug tools
-    set        Setup a new settings in the local cache
-    get        Get one or all keys stored in the local cache (return all keys if no argument is given).  
+    remove     Remove one or many addons from the local agent (Erase them from the disk).
+    create     Create and/or generate SlimIO files and addons.
+    build      Build and compile an agent into an executable with Node.js bundled in it.
+    archive    Create an addon archive (useful to remotely deploy addons with Prism).
+    connect    Connect to a local or remote SlimIO agent (must be started with the Socket built-in Addon).
+    config     Configure a local agent or a remote running agent.
+    debug      Debug local agent (navigate through local agent dump files)
+    start      Start the local agent with advanced debugging and logging utilities.
+    set        Setup a new settings in the local cache.
+    get        Get one or all keys stored in the local cache (return all keys if no argument is given).
 
   For more info, run any command with the `--help` flag
     $ slimio init --help
@@ -76,6 +76,11 @@ The command can be customised to choose the directory name and eventually initia
 
 ```bash
 $ slimio init dirName --add ihm,prism
+```
+
+or to setup a given set (for example to install all required addons to achieve **metrology**)
+```bash
+$ slimiot init --set metrology --add ihm
 ```
 
 ---
@@ -146,7 +151,7 @@ By default the addon will be deleted from the local **agent** configuration. (ag
 $ slimio config sync
 ```
 
-## Configure agent.json
+## Configure agent.json / agent.toml
 The SlimIO CLI expose a `config` command that allow you to easily manage and edit **agent.json**. By default this command run a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) (Real-eval-print-loop) if there is no arguments provided (Like the example bellow).
 
 <p align="center">
@@ -162,3 +167,12 @@ $ slimio config enable ihm,cpu
 ```
 
 Notice that addons must be separated by a comma for `sync`, `enable` and `disable` commands.
+
+## Available addons
+
+SlimIO is not a the state of MVP yet. A lot of addons have to be installed by yourself if you want to experiment with the product.
+
+| name | description | git |
+| --- | --- | --- |
+| ihm | Light embedded interface to manage a local Agent | https://github.com/SlimIO/ihm |
+
