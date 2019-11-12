@@ -30,25 +30,36 @@ $ slimio create addon --name addonName
 
 The generated code will be the following (where `addonName` is the name of the addon you specified):
 ```js
-const Addon = require("@slimio/addon"); 
+import Addon from "@slimio/addon";
 
-const addonName = new Addon("addonName"); 
+const addonName = new Addon("addonName");
 
-addonName.on("start", async() => {
-    // Tell the core that your addon is ready !
-    await addonName.ready();
-});
+/**
+ DO THE WORK HERE !
+**/
 
-module.exports = addonName;
+export default addonName;
 ```
 
-A complete API Documentation of Addon can be found [here](https://github.com/SlimIO/Addon#addon).
+A complete API Documentation of Addon can be found [here](https://github.com/SlimIO/Addon#addon). Feel free to inspire yourself and copy existing addons:
+
+- https://github.com/SlimIO/events
+- https://github.com/SlimIO/cpu-addon
+- https://github.com/SlimIO/FSC
 
 <p align="center">
 <img src="./images/addon.svg" width="650">
 </p>
 
-By default an Addon already chip with some **Callbacks** and **Events**.
+By default an Addon already chip with some native **Callbacks** and **Events**.
+
+## Callbacks 
+
+Callbacks are communication functions belonging to addons. They can trigger actions or recover data from an addon. They allow communication between addons in a one-to-one relationship.
+
+Each addon has a set of callbacks (native or declared by the developer itself).
+
+Callbacks name must respect the **snake_case** typographic convention. (Note: the registerCallback automatically switch **camelCase** to **snake_case**).
 
 ## Register and schedule a callback
 
@@ -63,8 +74,8 @@ myAddon.registerCallback("callback_name", async function() {
     console.log("callback_Name has been executed!");
 });
 ```
->⚠️ Please, be sure to avoid Anonymous function as much possible!
-Or by passing the callback reference as the name (The function can't be anonymous, else it will throw an Error).
+
+OR by declaring the function separately:
 
 ```js
 async function callbackName() {
@@ -141,7 +152,7 @@ It may be useful to catch the SlimIO events to achieve given tasks like managing
 
 Available Subjects are statically available on Addon Class. Example with **Alerting**:
 ```js
-Alerting.of(Addon.Subjects.Alarm.Update).filter(([CID]) => Storms.has(CID)).subscribe({
+Alerting.of(Addon.Subjects.alarmUpdate).filter(([CID]) => Storms.has(CID)).subscribe({
     next([CID]) {
         const rule = Storms.get(CID);
         if (!rule.walk()) {
@@ -162,17 +173,11 @@ Alerting.of(Addon.Subjects.Alarm.Update).filter(([CID]) => Storms.has(CID)).subs
 Subjects are described with the following TypeScript interface
 ```ts
 export interface Subjects {
-    Addon: {
-        readonly Ready: string;
-    };
-    Alarm: {
-        readonly Open: string;
-        readonly Update: string;
-        readonly Close: string;
-    };
-    Metrics: {
-        readonly Update: string;
-        readonly Create: string;
-    }
+    ready: string;
+    alarmOpen: string;
+    alarmUpdate: string;
+    alarmClose: string;
+    micCreate: string;
+    micUpdate: string;
 }
 ```
