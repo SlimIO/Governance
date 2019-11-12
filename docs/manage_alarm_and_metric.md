@@ -51,10 +51,18 @@ for (let id = 0; id < cpus.length; id++) {
 <img src="./images/entities_sql.PNG">
 </p>
 
-Alarms and Metrics require one entity to exist. If you do not specify the entity this mean that we will use the root Agent entity (**id 1**).
+Alarms and Metrics require one entity to exist. If you do not specify the entity, then the product will use the root Agent entity by default (**id 1**).
+
+Entities are managed by the built-in addon Events which expose many callbacks to manage and retrieve them:
+- declare_entity
+- declare_entity_descriptor
+- get_descriptors
+- search_entities
+- get_entity_by_id
+- remove_entity
 
 ## Alarm
-Alarms in SlimIO are managed and stored by the [Events](https://github.com/SlimIO/Events) built-in addon (in the db/events.db file). Events expose many callbacks and the complete list allow a complete CRUD management !
+Alarms in SlimIO are managed and stored by the [Events](https://github.com/SlimIO/Events) built-in addon (in the db/events.db file). Events expose many callbacks and the complete list allow a complete CRUD management of alarms entities !
 Some of these callbacks are:
 
 - create_alarm
@@ -62,8 +70,8 @@ Some of these callbacks are:
 - get_alarms_occurence
 - remove_alarm
 
-But those callbacks can be painful to work with because of the Asynchronous nature of the product. That why we introduce [@slimio/alert](https://github.com/SlimIO/Alert) package that has been
-build to simplify and improve the developer experience.
+But those callbacks can be painful to work with because of the Asynchronous nature of the product (need to ensure that the given entity exist at a given time). That why we introduce [@slimio/alert](https://github.com/SlimIO/Alert) package that has been
+build to simplify and enhance the developer experience.
 
 <p align="center">Throwing an alarm on the root entity</p>
 
@@ -83,3 +91,5 @@ An alarm is composed of a **severity**, **correlateKey** and one **entity**.
 The **correlate key** is used to identify and increment the occurence count of a given alarm (because you can have five same alarms but for five different devices).
 
 The correlate key (or **CK** when abbreviated) must respect the following RegEx `^[a-z_]{1,35}$` (only lowercase and underscore).
+
+## Metrics (QoS)
