@@ -4,6 +4,7 @@ require("dotenv").config();
 require("make-promises-safe");
 
 // Require Node.js Dependencies
+const { join } = require("path");
 const { writeFile, appendFile } = require("fs").promises;
 
 // Require Third-party Dependencies
@@ -13,7 +14,7 @@ const { get } = require("httpie");
 // CONSTANTS
 const GITHUB_ORGA = "SlimIO";
 const GITHUB_TOKEN = process.env.GIT_TOKEN;
-const FILE_NAME = "project_status.md";
+const FILE_NAME = join(__dirname, "docs", "project_status.md");
 
 async function getTomlType(repoName) {
     try {
@@ -40,10 +41,9 @@ async function main() {
         agent: GITHUB_ORGA
     });
     console.timeEnd("fetchRepos");
-    console.log(repos.length);
+    console.log(`Successfully fetched ${repos.length} repositories!`);
 
     const kinds = new Map();
-
     for (const { name, description, html_url, archived } of repos) {
         if (archived) {
             continue;
@@ -76,7 +76,7 @@ async function main() {
         await appendFile(FILE_NAME, "\n## " + type + "\n\nNom | Description | Version | Node | Dependencies\n --- | ---\ | :-: | :-: | :-:\n");
 
         for (const { name, description, project_version, node_version, dependencies } of repos) {
-            const updDesc = description.length > 50 ? `${description.slice(0, 47)}...` : description;
+            const updDesc = description.length > 40 ? `${description.slice(0, 37)}...` : description;
             await appendFile(FILE_NAME, `**${name}** | ${updDesc} | ${project_version} | ${node_version} | ${dependencies}\n`);
         }
     }
