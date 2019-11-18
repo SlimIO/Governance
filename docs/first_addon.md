@@ -181,3 +181,7 @@ export interface Subjects {
     micUpdate: string;
 }
 ```
+
+# After
+
+- [Manage/create alarms and metrics](https://github.com/SlimIO/Governance/blob/master/docs/manage_alarm_and_metric.md)
