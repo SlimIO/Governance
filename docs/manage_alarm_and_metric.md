@@ -117,3 +117,77 @@ The correlate key (or **CK** when abbreviated) must respect the following RegEx 
 > 👀 These alarms are easily managable from the **Alarm console** of the ihm addon.
 
 ## Metrics (QoS)
+
+Same story for publishing raw data in SlimIO. Entities and metrics are managed in the built-in Events addon but we created a package to simplify the whole process.
+
+Before publishing raw data to the product you need to declare what we call a "metric card". Without any valid metric card there is no way to publish a data to events. Each metric card require a valid Entity too.
+
+If we get back to our CPU addon, the first thing to be done is to declare and initialize our package:
+```js
+// Require Third-party Dependencies
+import Units from "@slimio/units";
+import metrics from "@slimio/metrics";
+import Addon from "@slimio/addon";
+
+// CONSTANTS
+const INTERVAL_MS = 5000;
+
+// Declare Addon
+const CPU = new Addon("cpu");
+const { Entity, MetricIdentityCard, sendRawQoS } = metrics(CPU);
+```
+
+After that we declare our Entity and our metrics cards.
+
+```js
+const CPU_E = new Entity("cpu", {
+    description: "Central Processing Unit"
+});
+new MetricIdentityCard("TOTAL", { unit: Units.Pourcent, entity: CPU_E });
+
+const cpus = os.cpus();
+for (let id = 0; id < cpus.length; id++) {
+    const entity = new Entity(`CPU.${id}`, { parent: CPU_E })
+        .set("speed", cpus[id].speed)
+        .set("model", cpus[id].model);
+
+    // All Identity Card are Prefixed by the Identity Name (ex: CPU_USER).
+    const options = { unit: Units.MilliSecond, entity };
+    new MetricIdentityCard("USER", options);
+    new MetricIdentityCard("NICE", options);
+    new MetricIdentityCard("SYS", options);
+    new MetricIdentityCard("IDLE", options);
+    new MetricIdentityCard("IRQ", options);
+}
+```
+
+> You will notice that we use the **@slimio/units** package to help us to describe the unit kind of the Metrics.
+
+To finally register a regular interval to recolt our raw data on the system.
+
+```js
+function cpuInterval() {
+    const raw = { user: 0, nice: 0, sys: 0, idle: 0, irq: 0 };
+    const harvestedAt = new Date().getTime();
+
+    const cpus = os.cpus();
+    for (let id = 0; id < cpus.length; id++) {
+        const { user, nice, sys, idle, irq } = cpus[id].times;
+        sendRawQoS(`CPU.${id}_USER`, user, harvestedAt);
+        sendRawQoS(`CPU.${id}_NICE`, nice, harvestedAt);
+        sendRawQoS(`CPU.${id}_SYS`, sys, harvestedAt);
+        sendRawQoS(`CPU.${id}_IDLE`, idle, harvestedAt);
+        sendRawQoS(`CPU.${id}_IRQ`, irq, harvestedAt);
+
+        raw.user += user;
+        raw.nice += nice;
+        raw.sys += sys;
+        raw.idle += idle;
+        raw.irq += irq;
+    }
+
+    const pourcent = raw.idle / (raw.user + raw.nice + raw.sys + raw.idle + raw.irq);
+    sendRawQoS("CPU_total", (1 - pourcent) * 100, harvestedAt);
+}
+CPU.registerInterval(cpuInterval, INTERVAL_MS);
+```
