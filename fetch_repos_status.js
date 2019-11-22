@@ -49,18 +49,17 @@ async function main() {
             continue;
         }
 
-        const repo_name = html_url.replace("https://github.com/" + GITHUB_ORGA + "/", "");
-        const type = await getTomlType(repo_name);
+        const type = await getTomlType(name);
         if (type === null) {
             continue;
         }
 
-        const package_file = "https://raw.githubusercontent.com/" + GITHUB_ORGA + "/" + repo_name + "/master/package.json";
-        const project_version = `![version](https://img.shields.io/badge/dynamic/json.svg?url=${package_file}&query=$.version&label=Version)`;
-        const node_version = `![version](https://img.shields.io/badge/dynamic/json.svg?url=${package_file}&query=$.engines.node&label=Node)`;
-        const dependencies = `![dependencies](https://img.shields.io/david/SlimIO/${repo_name})`;
+        const package_file = "https://raw.githubusercontent.com/" + GITHUB_ORGA + "/" + name + "/master/package.json";
+        const project_version = `![version](https://img.shields.io/badge/dynamic/json.svg?url=${package_file}&query=$.version&label=)`;
+        const node_version = `![version](https://img.shields.io/badge/dynamic/json.svg?url=${package_file}&query=$.engines.node&label=)`;
+        const dependencies = `![dependencies](https://img.shields.io/david/SlimIO/${name})`;
 
-        const repo = { name, description, project_version, node_version, dependencies };
+        const repo = { name, description, project_version, node_version, dependencies, html_url };
         if (kinds.has(type)) {
             kinds.get(type).push(repo);
         } else {
@@ -75,9 +74,9 @@ async function main() {
     for (const [type, repos] of kinds.entries()) {
         await appendFile(FILE_NAME, "\n## " + type + "\n\nNom | Description | Version | Node | Dependencies\n --- | ---\ | :-: | :-: | :-:\n");
 
-        for (const { name, description, project_version, node_version, dependencies } of repos) {
+        for (const { name, html_url, description, project_version, node_version, dependencies } of repos) {
             const updDesc = description.length > 40 ? `${description.slice(0, 37)}...` : description;
-            await appendFile(FILE_NAME, `**${name}** | ${updDesc} | ${project_version} | ${node_version} | ${dependencies}\n`);
+            await appendFile(FILE_NAME, `[${name}](${html_url}) | ${updDesc} | ${project_version} | ${node_version} | ${dependencies}\n`);
         }
     }
 }
