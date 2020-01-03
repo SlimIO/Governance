@@ -12,6 +12,7 @@ This documentation aims to describe all the tools we use on SlimIO. All the tool
 | [Documentation](https://github.com/SlimIO/documentation) | Generate real-time documentation for projects (it use jsdoc under the hood) |
 | [PSP](https://github.com/SlimIO/psp) | Check a given project files and structure against our policies |
 | [Manifest](https://github.com/SlimIO/Manifest) | To read/write/manage our manifest (**slimio.toml**) file |
+| [Security](https://github.com/SlimIO/Security) | Analyze and detect security issues in SlimIO repositories with Nsecure |
 
 ## Manifest
 
