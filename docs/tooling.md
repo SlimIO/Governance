@@ -1,10 +1,8 @@
 # SlimIO Tools
-This documentation aims to describe all the tools we use on SlimIO. All the tools below have been developed **by members of SlimIO**. Each repositories have complete description to dig the subject deeper (so dont hesitate to follow each links to learn more).
+This documentation aims to describe all the tools we use on SlimIO. All the tools below have been developed **by members of SlimIO**. Each repositories have complete description to dig the subject (so dont hesitate to follow each links to learn more).
 
 | name | description |
 | --- | --- |
-| [Dep-updater](https://github.com/fraxken/dep-updater) | CLI to update the npm dependencies of a project for you |
-| [Publish-preview](https://github.com/fraxken/publish-preview) | Preview of properties and files that will be published on the NPM registry |
 | [Sync](https://github.com/SlimIO/Sync) | Pull, Update and track Node.js projects state (outdated, psp policies...) |
 | [Markdown-Dependencies](https://github.com/SlimIO/Markdown-Dependencies) | Create and/or Update the 'Dependencies' section in README.md |
 | [Generator](https://github.com/SlimIO/Generator) | Generate a new SlimIO project |
@@ -13,6 +11,14 @@ This documentation aims to describe all the tools we use on SlimIO. All the tool
 | [PSP](https://github.com/SlimIO/psp) | Check a given project files and structure against our policies |
 | [Manifest](https://github.com/SlimIO/Manifest) | To read/write/manage our manifest (**slimio.toml**) file |
 | [Security](https://github.com/SlimIO/Security) | Analyze and detect security issues in SlimIO repositories with Nsecure |
+| [Registry](https://github.com/SlimIO/Registry) | Addon registry (like npm but for SlimIO addons and modules) |
+
+Following packages are useful but not part of the SlimIO tools.
+
+| name | description |
+| --- | --- |
+| [Dep-updater](https://github.com/fraxken/dep-updater) | CLI to update the npm dependencies of a project for you |
+| [Publish-preview](https://github.com/fraxken/publish-preview) | Preview of properties and files that will be published on the NPM 
 
 ## Manifest
 
@@ -79,3 +85,5 @@ $ psync install --noinstall
 ```
 
 The `--noinstall` avoid to install npm dependencies on all projects. In you want all projects to have their node_modules ready, then remove this argument.
+
+> 👀 For more information please check the Sync documentation.
