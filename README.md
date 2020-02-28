@@ -90,7 +90,6 @@ Core collaborators of the SlimIO project.
 
 - [fraxken](https://github.com/fraxken) - GENTILHOMME Thomas &lt;gentilhomme.thomas@gmail.com&gt;
 - [Aleksander](https://github.com/AlexandreMalaj) - MALAJ Alexandre &lt;alexandre.malaj@gmail.com&gt;
-- [Captain](https://github.com/Captainfive) - MONTES Irvin &lt;vinou_montes@hotmail.fr&gt;
 - [GuismoJames](https://www.linkedin.com/in/jgentilhomme/) - GENTILHOMME Jonathan &lt;gentilhomme.jonathan@gmail.com&gt;
 
 > **GENTILHOMME Thomas** is leading the project. Feel free to contact him for any technical and business questions.
@@ -99,8 +98,11 @@ Core collaborators of the SlimIO project.
 
 Contributors on one and/or many open-source projects that touch the SlimIO project.
 
+- [Haze](https://github.com/CroquetMickael) - CROQUET Mickael
+- [Captain](https://github.com/Captainfive) - MONTES Irvin &lt;vinou_montes@hotmail.fr&gt;
 - [Marko](https://github.com/Markobobby) - MALAJ Mark &lt;Malaj1.mark@gmail.com&gt;
 - [Nico](https://github.com/Dafyh) - MARTEAU Nicolas &lt;nico_mart@hotmail.fr&gt;
+- [Rizou](https://www.linkedin.com/in/maxime-f%C3%A9ry-450769192/) - FERY Maxime &lt;maxime.fery@outlook.fr&gt;
 
 <p align="center">Photos of us in our last dev camp</p>
 
