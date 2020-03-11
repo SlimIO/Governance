@@ -2,7 +2,7 @@
 
 ## Summary
 
-The purpose of this guide is to allow Developers and Integrators to initialize and setup a SlimIO Agent on the local machine (The next guide will be dedicated to how to create your first addon).
+The purpose of this guide is to allow Developers and Integrators to initialize and setup a SlimIO agent on their local machine (the next guide will be dedicated to how to create your first addon.).
 
 ## Requirements
 
@@ -26,16 +26,18 @@ $ slimio --help
 
   Available Commands
     init       Clone and install a complete SlimIO Agent.
-    add        Add one or many addon(s) to the local agent (Addon are enabled by default).
-    remove     Remove one or many addons from the local agent (Erase them from the disk).
+    add        Add one or many addons to the local agent (Each addon are enabled by default.).
+    remove     Remove one or many addons from the local agent (erase them from the disk.).
     create     Create and/or generate SlimIO files and addons.
     build      Build and compile an agent into an executable with Node.js bundled in it.
     archive    Create an addon archive (useful to remotely deploy addons with Prism).
-    connect    Connect to a local or remote SlimIO agent (must be started with the Socket built-in Addon).
-    config     Configure a local agent or a remote running agent.
-    debug      Debug local agent (navigate through local agent dump files)
+    connect    Connect to a local or remote SlimIO agent (must be started and use the Socket built-in Addon).
+    config     Configure a local or remote running agent.
+    schema     Create a config file from a JSON Schema (2019-09 draft).
+    debug      Debug the local agent (navigate through local agent dump files).
     start      Start the local agent with advanced debugging and logging utilities.
-    set        Setup a new settings in the local cache.
+    lang       Configure the CLI default language (which is english by default).
+    set        Setup and/or configure a given setting in the local cache.
     get        Get one or all keys stored in the local cache (return all keys if no argument is given).
 
   For more info, run any command with the `--help` flag
@@ -49,6 +51,16 @@ $ slimio --help
 
 > 👀 If you'r working with private SlimIO packages, think to setup [tokens](https://github.com/SlimIO/Governance/blob/master/docs/tooling.md#environment-variables).
 
+## Language
+
+The CLI has a i18n implementation. The `slimio lang` will allow you to choose another language.
+
+<p align="center">
+<img src="./images/cli_lang.gif">
+</p>
+
+> Feel free to pull request on github your own language!
+
 ## Manual installation
 
 > ⚠️ Manual installation require a lot of experience as a Node.js developer.
@@ -61,7 +73,7 @@ This repository describe how work an **Agent** and list **all his components** (
 To setup a basic agent just run the following command at the location where you want the agent to be installed:
 
 ```bash
-$ slimio init
+$ slimio init --set metrology --add ihm
 ```
 
 > ⚠️ The init command create the folder for you (dont mkdir an agent directory yourself).
@@ -80,7 +92,7 @@ $ slimio init dirName --add ihm,prism
 
 or to setup a given set (for example to install all required addons to achieve **metrology**)
 ```bash
-$ slimiot init --set metrology --add ihm
+$ slimio init --set metrology --add ihm
 ```
 
 ---
