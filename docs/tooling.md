@@ -67,6 +67,7 @@ The next step is to create two Environment Variables `GIT_TOKEN` and `NPM_TOKEN`
 
 - [How to set the path and environment variables in Windows](https://www.computerhope.com/issues/ch000549.htm)
 - [Environment Variables in Linux](https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-a-linux-vps)
+- [Share Environment Vars between WSL and Windows](https://devblogs.microsoft.com/commandline/share-environment-vars-between-wsl-and-windows/)
 
 ## Cloning all SlimIO projects
 
