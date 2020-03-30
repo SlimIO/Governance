@@ -7,7 +7,7 @@ This documentation aims to describe all the tools we use on SlimIO. All the tool
 | [Markdown-Dependencies](https://github.com/SlimIO/Markdown-Dependencies) | Create and/or Update the 'Dependencies' section in README.md |
 | [Generator](https://github.com/SlimIO/Generator) | Generate a new SlimIO project |
 | [Dependency-Analyser](https://github.com/SlimIO/Dependency-Analyser) | Draw a network of all SlimIO Projects with their direct dependencies |
-| [Documentation](https://github.com/SlimIO/documentation) | Generate real-time documentation for projects (it use jsdoc under the hood) |
+| [DevDocs](https://github.com/SlimIO/devdocs) | Generate real-time dev-documentation for projects (it use jsdoc under the hood) |
 | [PSP](https://github.com/SlimIO/psp) | Check a given project files and structure against our policies |
 | [Manifest](https://github.com/SlimIO/Manifest) | To read/write/manage our manifest (**slimio.toml**) file |
 | [Security](https://github.com/SlimIO/Security) | Analyze and detect security issues in SlimIO repositories with Nsecure |
