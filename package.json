@@ -26,6 +26,6 @@
     "dotenv": "^8.2.0",
     "fetch-github-repositories": "^2.0.0",
     "httpie": "^1.1.2",
-    "make-promises-safe": "^5.0.0"
+    "make-promises-safe": "^5.1.0"
   }
 }
