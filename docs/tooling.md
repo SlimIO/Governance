@@ -1,25 +1,25 @@
 # SlimIO Tools
-This documentation aims to describe all the tools we use on SlimIO. All the tools below have been developed **by members of SlimIO**. Each repositories have complete description to dig the subject (so dont hesitate to follow each links to learn more).
+This documentation aims to describe all the tools we use on SlimIO. All the tools below have been developed **by members of SlimIO**. Please follow each repositories links if you want to understood in deep the role of each tools.
 
-| name | description |
-| --- | --- |
-| [Sync](https://github.com/SlimIO/Sync) | Pull, Update and track Node.js projects state (outdated, psp policies...) |
-| [Markdown-Dependencies](https://github.com/SlimIO/Markdown-Dependencies) | Create and/or Update the 'Dependencies' section in README.md |
-| [Generator](https://github.com/SlimIO/Generator) | Generate a new SlimIO project |
-| [Dependency-Analyser](https://github.com/SlimIO/Dependency-Analyser) | Draw a network of all SlimIO Projects with their direct dependencies |
-| [DevDocs](https://github.com/SlimIO/devdocs) | Generate real-time dev-documentation for projects (it use jsdoc under the hood) |
-| [PSP](https://github.com/SlimIO/psp) | Check a given project files and structure against our policies |
-| [Manifest](https://github.com/SlimIO/Manifest) | To read/write/manage our manifest (**slimio.toml**) file |
-| [Security](https://github.com/SlimIO/Security) | Analyze and detect security issues in SlimIO repositories with Nsecure |
-| [Registry](https://github.com/SlimIO/Registry) | Addon registry (like npm but for SlimIO addons and modules) |
-| [Statusboard](https://github.com/SlimIO/statusboard) | Open-source statusboard, online version for SlimIO [here](https://slimio-statusboard.herokuapp.com/) |
+| name | type | description |
+| --- | --- | --- |
+| [Sync](https://github.com/SlimIO/Sync) | CLI | Pull, Update and track Node.js projects state (outdated, psp policies...) |
+| [Markdown-Dependencies](https://github.com/SlimIO/Markdown-Dependencies) | CLI | Create and/or Update the 'Dependencies' section in README.md of each projects. |
+| [Generator](https://github.com/SlimIO/Generator) | CLI | Generate a new SlimIO project (Addon, CLI, Service etc..) |
+| [Dependency-Analyser](https://github.com/SlimIO/Dependency-Analyser) | CLI/Service | Draw a network of all SlimIO Projects with their direct dependencies. |
+| [DevDocs](https://github.com/SlimIO/devdocs) | CLI | Generate real-time dev-documentation for projects (it use jsdoc under the hood) |
+| [PSP](https://github.com/SlimIO/psp) | CLI | Check a given project files and structure against our internal policies. |
+| [Manifest](https://github.com/SlimIO/Manifest) | Package | To read/write/manage our manifest (**slimio.toml**) file. |
+| [Security](https://github.com/SlimIO/Security) | Service | Analyze and detect security issues in SlimIO repositories with [Node-secure](https://github.com/ES-Community/nsecure) |
+| [Registry](https://github.com/SlimIO/Registry) | Service | Addon registry (like npm but for SlimIO addons and modules) |
+| [Statusboard](https://github.com/SlimIO/statusboard) | Service | Open-source statusboard, online version for SlimIO available [here](https://slimio-statusboard.herokuapp.com/). |
 
 Following packages are useful but not part of the SlimIO tools.
 
-| name | description |
-| --- | --- |
-| [Dep-updater](https://github.com/fraxken/dep-updater) | CLI to update the npm dependencies of a project for you |
-| [Publish-preview](https://github.com/fraxken/publish-preview) | Preview of properties and files that will be published on the NPM 
+| name | type | description |
+| --- | --- | --- |
+| [Dep-updater](https://github.com/fraxken/dep-updater) | CLI | CLI to update the npm dependencies of a project for you |
+| [Publish-preview](https://github.com/fraxken/publish-preview) | CLI | Preview of properties and files that will be published on the NPM 
 
 ## Articles on our tools
 
@@ -74,7 +74,7 @@ The next step is to create two Environment Variables `GIT_TOKEN` and `NPM_TOKEN`
 - [Environment Variables in Linux](https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-a-linux-vps)
 - [Share Environment Vars between WSL and Windows](https://devblogs.microsoft.com/commandline/share-environment-vars-between-wsl-and-windows/)
 
-## Cloning all SlimIO projects
+## Cloning all SlimIO projects on your computer
 
 > ⚠️ Node.js and GIT must be installed on your system.
 
