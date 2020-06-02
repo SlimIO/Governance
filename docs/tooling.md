@@ -21,6 +21,10 @@ Following packages are useful but not part of the SlimIO tools.
 | [Dep-updater](https://github.com/fraxken/dep-updater) | CLI to update the npm dependencies of a project for you |
 | [Publish-preview](https://github.com/fraxken/publish-preview) | Preview of properties and files that will be published on the NPM 
 
+## Articles on our tools
+
+- [PSP](https://dev.to/fraxken/slimio-tool-psp-5116) 
+
 ## Manifest
 
 The manifest (the **slimio.toml** file at the root of each projects) is useful when we need to describe specific behaviors and settings in our internals tools or to our global product. Some examples are:
