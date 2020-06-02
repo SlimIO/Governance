@@ -12,6 +12,7 @@ This documentation aims to describe all the tools we use on SlimIO. All the tool
 | [Manifest](https://github.com/SlimIO/Manifest) | To read/write/manage our manifest (**slimio.toml**) file |
 | [Security](https://github.com/SlimIO/Security) | Analyze and detect security issues in SlimIO repositories with Nsecure |
 | [Registry](https://github.com/SlimIO/Registry) | Addon registry (like npm but for SlimIO addons and modules) |
+| [Statusboard](https://github.com/SlimIO/statusboard) | Open-source statusboard, online version for SlimIO [here](https://slimio-statusboard.herokuapp.com/) |
 
 Following packages are useful but not part of the SlimIO tools.
 
