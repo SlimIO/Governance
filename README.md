@@ -69,6 +69,10 @@ Agentless or not. Cloud or on-premise.
 - [Create your first SlimIO Addon](./docs/first_addon.md)
 - [Manage alarms and metrics in Addons](./docs/manage_alarm_and_metric.md)
 
+### Architecture articles
+- [Monolithic to Modular](https://dev.to/fraxken/slimio-architecture-1-monolithic-to-modular-4hm3)
+- [Configuration](https://dev.to/fraxken/slimio-architecture-2-configuration-1429)
+
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md). There is some guides available to help developers and contributors:
 
