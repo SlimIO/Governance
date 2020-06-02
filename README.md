@@ -47,6 +47,10 @@ Our default metrology set of addons has been designed to monitore local host in 
 
 This is the price we pay for most of the listed top strengths (We truly believe that this trade is beneficial in the long term).
 
+### Want more ?
+
+There is SlimIO introduction article on [dev.to](https://dev.to/fraxken/slimio-introduction-3eg8).
+
 ## why choose SlimIO rather than a concurrent solution ?
 
 The SlimIO project started with this simple question: **How to build a sustainable monitoring solution that can answer the needs of our customers over time ?**
