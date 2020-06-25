@@ -76,6 +76,7 @@ Agentless or not. Cloud or on-premise.
 ### Architecture articles
 - [Monolithic to Modular](https://dev.to/fraxken/slimio-architecture-1-monolithic-to-modular-4hm3)
 - [Configuration](https://dev.to/fraxken/slimio-architecture-2-configuration-1429)
+- [Stack choices](https://dev.to/fraxken/slimio-architecture-3-stack-cgm)
 
 ## Contribution Guidelines
 Before contributing, please check and read our [Code of conduct](./COC_POLICY.md). There is some guides available to help developers and contributors:
