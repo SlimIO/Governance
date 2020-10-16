@@ -5,22 +5,23 @@
 
 SlimIO - Governance &amp; Documentation repository.
 
-> 👀 [SlimIO Gource Youtube Video](https://www.youtube.com/watch?v=pMkiWtLNyjY)
+> 👀 👉 We are actively looking for partners and contributors. The project requires a significant investment and we clearly lack qualified manpower.
 
 ## Introduction
-SlimIO is a light and modulable monitoring solution writted in Node.js / C / C++.
+SlimIO is a light and modulable unified monitoring solution who is trying to break and re-imagine several beliefs and practices that have long been applied to the world of monitoring.
 
-Our goals is to bring the monitoring to the whole IT (Embedded system, Cloud, On-premise) for both large and small businesses (It's not a promise **but a destination** to keep the project on the right track). We designed and crafted the product with **accessibility**, **maintainability** and **flexibility** in mind at every development steps (For us this is the key to build a successfull product).
+Our goals is to bring and make accessible the monitoring to the whole IT (Embedded system, Cloud, On-premise) for both large and small businesses. We designed and crafted the product with **accessibility**, **maintainability** and **neutrality** in mind at every development steps.
 
 Each covered features and core components are part of an Addon (one role/feature = one addon). That's really the strength of our solution that allow us to:
-- Register the monitoring in a [devops](https://en.wikipedia.org/wiki/DevOps) process/mentality.
+- Register the monitoring in any [DevOps](https://en.wikipedia.org/wiki/DevOps) process.
 - Apply security patches **very quickly** (The goal is to avoid an architecture that push into transitive open-source code).
 - Evolving given part of the software without having to break the whole product (and **when possible** with no service degradation).
 - Easier to fire hunt and debug (like fire doors, we isolate each piece so that the fire does not spread).
 - Clean scope of what we have to self monitor.
+- Have a solution that adapts to a multitude of needs.
 - Etc...
 
-Our default metrology set of addons has been designed to monitore local host in first place, but they will also have the ability to complete a remote monitoring for those who want an agentless solution (with support for the most common protocols like **SNMP** and **WMI**).
+Our default metrology set of addons has been designed to monitore local host in first place, but they also have the ability to complete a remote monitoring for those who want an agentless solution (with support for the most common protocols like **SNMP** and **WMI**).
 
 ### What are the strenghts of our product?
 
@@ -50,20 +51,6 @@ This is the price we pay for most of the listed top strengths (We truly believe 
 ### Want more ?
 
 There is SlimIO introduction article on [dev.to](https://dev.to/fraxken/slimio-introduction-3eg8).
-
-## why choose SlimIO rather than a concurrent solution ?
-
-The SlimIO project started with this simple question: **How to build a sustainable monitoring solution that can answer the needs of our customers over time ?**
-
-Our product has been created to be a polyvalent monitoring solution capable to answer a wide range of production cases (even if we are not doing it in the fastest and/or best way at the beginning). SlimIO remain neutral and bring a lot of tools on the table to allow developers to extend the product as they want very easily.
-
-- APM
-- Network
-- Infrastructure
-- Logs
-- Whatever you want
-
-Agentless or not. Cloud or on-premise.
 
 ## Documentation
 
